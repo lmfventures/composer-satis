@@ -1,0 +1,25 @@
+{
+    "name": "lmf/composer-satis",
+    "homepage": "https://8240a2e5bf16.ngrok-free.app",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Allen-adVentures/OcrTools.git"
+        }
+    ],
+    "require": {
+        "lmf/ocr-tools": "v1.0.2"
+    },
+    "require-all": false,
+    "require-dependencies": true,
+    "require-dev-dependencies": true,
+    "config": {
+        "secure-http": true
+    },
+    "output-dir": "public",
+    "archive": {
+        "directory": "dist",
+        "format": "tar",
+        "skip-dev": false
+    }
+}
