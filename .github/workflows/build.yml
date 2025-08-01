@@ -31,7 +31,7 @@ jobs:
 
     - name: Configure Composer for GitHub authentication
       run: |
-        echo '{"github-oauth": {"github.com": "${{ secrets.PAT_TOKEN }}"}}' > auth.json
+        echo '{"github-oauth": {"github.com": "${{ secrets.pat_token }}"}}' > auth.json
 
     - name: Build Satis repository
       run: php bin/satis build satis.json public/
