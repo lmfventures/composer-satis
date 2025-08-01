@@ -31,11 +31,7 @@ jobs:
 
     - name: Configure Composer for GitHub authentication
       run: |
-        composer config --global github-oauth.github.com ${{ secrets.PAT_TOKEN }}
-
-    - name: Configure Git for GitHub authentication
-      run: |
-        git config --global url."https://${{ secrets.PAT_TOKEN }}@github.com/".insteadOf "https://github.com/"
+        composer config github-oauth.github.com ${{ secrets.pat_token }}
 
     - name: Build Satis repository
       run: php bin/satis build satis.json public/
