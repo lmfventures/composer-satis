@@ -1,0 +1,10 @@
+{
+    "packages": [],
+    "includes": {
+        "include/all$12fbc41efcffef641a48e0f3292cb4bae156881c.json": {
+            "sha1": "12fbc41efcffef641a48e0f3292cb4bae156881c"
+        }
+    },
+    "metadata-url": "/composer-satis/p2/%package%.json",
+    "available-packages": ["lmf/package-ocr"]
+}

@@ -1,25 +1,28 @@
 {
     "name": "lmf/composer-satis",
-    "homepage": "https://8240a2e5bf16.ngrok-free.app",
+    "homepage": "https://lmfventures.github.io/composer-satis",
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/Allen-adVentures/OcrTools.git"
+            "url": "https://github.com/lmfventures/package-ocr.git"
         }
     ],
     "require": {
-        "lmf/ocr-tools": "v1.0.2"
+        "lmf/package-ocr": "v1.0.0"
     },
     "require-all": false,
     "require-dependencies": true,
-    "require-dev-dependencies": true,
+    "require-dev-dependencies": false,
     "config": {
         "secure-http": true
     },
     "output-dir": "public",
+    "output-html": true,
+    "allow-seo-indexing": true,
     "archive": {
         "directory": "dist",
         "format": "tar",
-        "skip-dev": false
+        "prefix-url": "https://lmfventures.github.io/composer-satis",
+        "skip-dev": true
     }
 }
