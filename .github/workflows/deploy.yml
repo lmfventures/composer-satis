@@ -4,6 +4,8 @@ on:
   push:
     branches: [ main ]
   workflow_dispatch:
+  schedule:
+    - cron: '0 */6 * * *'  # Run every 6 hours
 
 jobs:
   deploy:
@@ -36,8 +38,32 @@ jobs:
         ssh-keyscan github.com >> ~/.ssh/known_hosts
         git config --global url."git@github.com:".insteadOf "https://github.com/"
 
+    - name: Check for new releases
+      run: |
+        # Get the latest tag from the private repository
+        LATEST_TAG=$(git ls-remote --tags https://github.com/lmfventures/package-ocr.git | tail -1 | cut -f2 | sed 's/refs\/tags\///')
+        echo "Latest tag: $LATEST_TAG"
+        
+        # Check if we have this tag cached
+        if [ -f "last_built_tag.txt" ]; then
+          LAST_BUILT=$(cat last_built_tag.txt)
+          if [ "$LATEST_TAG" = "$LAST_BUILT" ]; then
+            echo "No new releases found. Skipping build."
+            echo "SKIP_BUILD=true" >> $GITHUB_ENV
+          else
+            echo "New release found: $LATEST_TAG"
+            echo "SKIP_BUILD=false" >> $GITHUB_ENV
+          fi
+        else
+          echo "First build, proceeding..."
+          echo "SKIP_BUILD=false" >> $GITHUB_ENV
+        fi
+
     - name: Build Satis repository
-      run: php bin/satis build satis.json public/
+      if: env.SKIP_BUILD != 'true'
+      run: |
+        php bin/satis build satis.json public/
+        echo "$LATEST_TAG" > last_built_tag.txt
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
