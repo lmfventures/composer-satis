@@ -65,7 +65,6 @@
                         "providers": ["OcrTools\\OcrServiceProvider"]
                     }
                 },
-                "installation-source": "dist",
                 "autoload": {
                     "psr-4": {
                         "OcrTools\\": "src/"

@@ -7,10 +7,7 @@
             "url": "https://github.com/lmfventures/package-ocr.git"
         }
     ],
-    "require": {
-        "lmf/package-ocr": "*"
-    },
-    "require-all": false,
+    "require-all": true,
     "require-dependencies": true,
     "require-dev-dependencies": false,
     "config": {
