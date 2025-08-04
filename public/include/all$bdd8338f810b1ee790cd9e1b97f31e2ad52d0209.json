@@ -1,7 +1,7 @@
 {
     "packages": {
-        "lmf/package-ocr": [
-            {
+        "lmf/package-ocr": {
+            "v1.0.0": {
                 "name": "lmf/package-ocr",
                 "version": "v1.0.0",
                 "version_normalized": "1.0.0.0",
@@ -39,7 +39,7 @@
                     "issues": "https://github.com/lmfventures/package-ocr/issues"
                 }
             },
-            {
+            "v1.0.1": {
                 "name": "lmf/package-ocr",
                 "version": "v1.0.1",
                 "version_normalized": "1.0.1.0",
@@ -77,7 +77,46 @@
                     "source": "https://github.com/lmfventures/package-ocr/tree/v1.0.1",
                     "issues": "https://github.com/lmfventures/package-ocr/issues"
                 }
+            },
+            "dev-main": {
+                "name": "lmf/package-ocr",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-ocr.git",
+                    "reference": "25af83460a777fae5e882f6b70d1c0dcb0728622"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-ocr/zipball/25af83460a777fae5e882f6b70d1c0dcb0728622",
+                    "reference": "25af83460a777fae5e882f6b70d1c0dcb0728622",
+                    "shasum": ""
+                },
+                "require": {
+                    "google/cloud-vision": "^2.0",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-01T05:16:22+00:00",
+                "default-branch": true,
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": ["OcrTools\\OcrServiceProvider"]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "OcrTools\\": "src/"
+                    }
+                },
+                "license": ["MIT"],
+                "description": "Laravel package for OCR scanning and parsing using Google Cloud Vision API.",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-ocr/tree/v1.0.1",
+                    "issues": "https://github.com/lmfventures/package-ocr/issues"
+                }
             }
-        ]
+        }
     }
 }

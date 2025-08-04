@@ -1,8 +1,8 @@
 {
     "packages": [],
     "includes": {
-        "include/all$994a16c7693b36f36f1ae9f83b9fbc967eaa690d.json": {
-            "sha1": "994a16c7693b36f36f1ae9f83b9fbc967eaa690d"
+        "include/all$bdd8338f810b1ee790cd9e1b97f31e2ad52d0209.json": {
+            "sha1": "bdd8338f810b1ee790cd9e1b97f31e2ad52d0209"
         }
     },
     "metadata-url": "/composer-satis/p2/%package%.json",
