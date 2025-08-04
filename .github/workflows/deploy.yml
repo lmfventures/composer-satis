@@ -19,7 +19,6 @@ jobs:
       uses: shivammathur/setup-php@v2
       with:
         php-version: '8.2'
-        disable-extensions: xdebug
 
     - name: Configure Git
       run: |
@@ -29,9 +28,13 @@ jobs:
     - name: Install Composer dependencies
       run: composer install --no-dev --optimize-autoloader
 
-    - name: Configure Composer for GitHub authentication
+    - name: Setup SSH for private repository access
       run: |
-        composer config github-oauth.github.com ${{ secrets.GITHUB_TOKEN }}
+        mkdir -p ~/.ssh
+        echo "${{ secrets.COMPOSER_SATIS }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+        git config --global url."git@github.com:".insteadOf "https://github.com/"
 
     - name: Build Satis repository
       run: php bin/satis build satis.json public/
