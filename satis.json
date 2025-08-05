@@ -8,7 +8,7 @@
         }
     ],
     "require": {
-        "lmf/package-ocr": "^1.0.1"
+        "lmf/package-ocr": "*"
     },
     "require-all": false,
     "require-dependencies": true,
