@@ -1,4 +1,4 @@
-# Satis Server Setup
+# Satis Server Setup.
 
 This guide walks you through setting up a [Satis](https://getcomposer.org/doc/articles/handling-private-packages-with-satis.md) Composer repository server for private or custom PHP packages.
 
