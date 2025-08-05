@@ -1,7 +1,7 @@
 {
     "packages": {
-        "lmf/package-ocr": [
-            {
+        "lmf/package-ocr": {
+            "v1.0.1": {
                 "name": "lmf/package-ocr",
                 "version": "v1.0.1",
                 "version_normalized": "1.0.1.0",
@@ -39,6 +39,6 @@
                     "issues": "https://github.com/lmfventures/package-ocr/issues"
                 }
             }
-        ]
+        }
     }
 }

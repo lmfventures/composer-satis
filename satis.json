@@ -8,13 +8,15 @@
         }
     ],
     "require": {
-        "lmf/package-ocr": "*"
+        "lmf/package-ocr": "^1.0.1"
     },
     "require-all": false,
     "require-dependencies": true,
     "require-dev-dependencies": false,
     "config": {
-        "secure-http": true
+        "secure-http": true,
+        "minimum-stability": "stable",
+        "prefer-stable": true
     },
     "output-dir": "public",
     "output-html": true,
