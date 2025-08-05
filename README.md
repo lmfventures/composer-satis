@@ -79,8 +79,8 @@ Re-run the build command anytime you update satis.json or push new tags
 
 ### 🔐 Handling Private Repositories
 
-If your VCS repository is private, you’ll need to provide SSH access to your GitHub Actions workflow. Composer Satis uses the private key to authenticate, and the private Composer package repository accepts the connection because it has the matching public key added as a deploy key.
-This creates a secure SSH tunnel between the two repositories, allowing your Satis build process to access the private Composer package repository without exposing credentials in your code.
+If your VCS repository is private, add the SSH private key (linked to your Composer package repository) to GitHub Actions secrets and the public key as a deploy key on the repository.
+This enables Composer Satis to authenticate via SSH, creating a secure connection between the repositories without exposing credentials.
 
 Add ssh key secret → composer-satis repository
 
