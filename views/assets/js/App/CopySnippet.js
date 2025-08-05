@@ -69,7 +69,7 @@ class CopySnippet {
         // Build release string to copy to composer.json
         const packageName = event.target.parentNode.dataset.packageName;
         const releaseVersion = event.target.textContent;
-        this.snippetTextField.value = `"${packageName}": "${releaseVersion}"`;
+        this.snippetTextField.value = `composer require ${packageName}`;
 
         // Make sure the widget is visible and under these releases
         this.widget.classList.remove("d-none");
