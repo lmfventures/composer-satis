@@ -14,7 +14,7 @@
                     "type": "tar",
                     "url": "https://lmfventures.github.io/composer-satis/dist/lmf/package-ocr/lmf-package-ocr-626e6f52477c9a3fe3587252595990086c109be9-zip-d1d5b9.tar",
                     "reference": "626e6f52477c9a3fe3587252595990086c109be9",
-                    "shasum": "162a01a574e67958d08c7c51a41835bc4ff6eff9"
+                    "shasum": "7ebf333e4f5ab901c1b6c25f7d5df3918d5890ad"
                 },
                 "require": {
                     "google/cloud-vision": "^2.0",
@@ -27,6 +27,7 @@
                         "providers": ["OcrTools\\OcrServiceProvider"]
                     }
                 },
+                "installation-source": "dist",
                 "autoload": {
                     "psr-4": {
                         "OcrTools\\": "src/"
@@ -52,7 +53,7 @@
                     "type": "tar",
                     "url": "https://lmfventures.github.io/composer-satis/dist/lmf/package-ocr/lmf-package-ocr-25af83460a777fae5e882f6b70d1c0dcb0728622-zip-9a78c7.tar",
                     "reference": "25af83460a777fae5e882f6b70d1c0dcb0728622",
-                    "shasum": "60680cf9dbc414224d8c29af3576142af900ae07"
+                    "shasum": "282c717762fd2990db2cd343cb26252396783cbf"
                 },
                 "require": {
                     "google/cloud-vision": "^2.0",
@@ -65,6 +66,7 @@
                         "providers": ["OcrTools\\OcrServiceProvider"]
                     }
                 },
+                "installation-source": "dist",
                 "autoload": {
                     "psr-4": {
                         "OcrTools\\": "src/"
