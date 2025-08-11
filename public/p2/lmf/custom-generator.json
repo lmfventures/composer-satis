@@ -14,7 +14,7 @@
                     "type": "tar",
                     "url": "https://lmfventures.github.io/composer-satis/dist/lmf/custom-generator/lmf-custom-generator-7ddcebc3ed1739607151e62e81a9a6b087f8391d-zip-46c211.tar",
                     "reference": "7ddcebc3ed1739607151e62e81a9a6b087f8391d",
-                    "shasum": "a552a9ded21d7a2d9dd969fb6845eb3f21e3935a"
+                    "shasum": "51beb173030559cbe9b1c5f457688c7754b4c790"
                 },
                 "require": {
                     "laravel/framework": "^10.0|^11.0",
@@ -30,6 +30,7 @@
                         ]
                     }
                 },
+                "installation-source": "dist",
                 "autoload": {
                     "psr-4": {
                         "Lmf\\CustomGenerator\\": "src/"
@@ -61,7 +62,7 @@
                     "type": "tar",
                     "url": "https://lmfventures.github.io/composer-satis/dist/lmf/custom-generator/lmf-custom-generator-3204ea8526b72d7d74ca87e68a7d61a3275c8677-zip-c443d2.tar",
                     "reference": "3204ea8526b72d7d74ca87e68a7d61a3275c8677",
-                    "shasum": "6c30978c9128c667e90d77a86de5db9b5ae87029"
+                    "shasum": "e80f172ff6eecea9d0eadf5a2137ad0ea9928f7d"
                 },
                 "require": {
                     "laravel/framework": "^10.0|^11.0|^12.0",
@@ -77,6 +78,7 @@
                         ]
                     }
                 },
+                "installation-source": "dist",
                 "autoload": {
                     "psr-4": {
                         "Lmf\\CustomGenerator\\": "src/"
@@ -108,7 +110,7 @@
                     "type": "tar",
                     "url": "https://lmfventures.github.io/composer-satis/dist/lmf/custom-generator/lmf-custom-generator-08b00ca635355a1dc627d5e57d093537e2c7b7ac-zip-f668cf.tar",
                     "reference": "08b00ca635355a1dc627d5e57d093537e2c7b7ac",
-                    "shasum": "c14100ad99fc77fa1ebad6dceccf11aea3ac8d03"
+                    "shasum": "beadc9d30b62211178b41f1b42dc522c32f29ac1"
                 },
                 "require": {
                     "illuminate/support": "^10.0|^11.0|^12.0",
@@ -124,6 +126,7 @@
                         ]
                     }
                 },
+                "installation-source": "dist",
                 "autoload": {
                     "psr-4": {
                         "Lmf\\CustomGenerator\\": "src/"

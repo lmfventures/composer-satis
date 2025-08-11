@@ -43,7 +43,7 @@
                 ],
                 "description": "Laravel package for OCR scanning and parsing using Google Cloud Vision API.",
                 "support": {
-                    "source": "https://github.com/lmfventures/package-ocr/tree/main",
+                    "source": "https://github.com/lmfventures/package-ocr/tree/v1.0.2",
                     "issues": "https://github.com/lmfventures/package-ocr/issues"
                 }
             }
