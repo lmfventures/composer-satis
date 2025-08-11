@@ -2,6 +2,8 @@
 
 Use this section as a quick-start to build and publish your own Composer package from scratch.
 
+> Important: Name your package `lmf/your-package-name`.
+
 #### Prerequisites
 
 - PHP 8.1+ (or your target PHP version)
@@ -11,19 +13,19 @@ Use this section as a quick-start to build and publish your own Composer package
 #### 1) Create the repository and initialize Composer
 
 ```bash
-mkdir my-vendor-my-package && cd my-vendor-my-package
+mkdir your-package-name && cd your-package-name
 git init
 composer init \
-  --name="my-vendor/my-package" \
+  --name="lmf/your-package-name" \
   --description="Short description of your package" \
   --type="library" \
   --license="MIT" \
   --author="Your Name <you@example.com>" \
   --require="php:^8.1" \
-  --autoload="psr-4:{\\"MyVendor\\\\MyPackage\\\": \\"src/\\"}"
+  --autoload="psr-4:{\"Lmf\\\\YourPackage\\\": \"src/\"}"
 ```
 
-This creates a minimal `composer.json` and PSR-4 autoload mapping for `MyVendor\MyPackage\` → `src/`.
+This creates a minimal `composer.json` and PSR-4 autoload mapping for `Lmf\YourPackage\` → `src/`.
 
 #### 2) Scaffold directories
 
@@ -39,7 +41,7 @@ Optionally add: `docs/`, `examples/`, `config/`, `.github/workflows/`.
 <?php
 // file: src/Greeting.php
 
-namespace MyVendor\MyPackage;
+namespace Lmf\YourPackage;
 
 class Greeting
 {
@@ -87,7 +89,7 @@ Create a first test:
 <?php
 // file: tests/GreetingTest.php
 
-use MyVendor\MyPackage\Greeting;
+use Lmf\YourPackage\Greeting;
 
 it('greets by name', function () {
     $greeting = new Greeting();
@@ -136,7 +138,7 @@ Use Semantic Versioning.
     git add .
     git commit -m "feat: initial release"
     git tag v0.1.0
-    git remote add origin git@github.com:my-vendor/my-package.git
+    git remote add origin git@github.com:your-org-or-username/your-package-name.git
     git push -u origin main --tags
 ```
 
@@ -147,7 +149,7 @@ Use Semantic Versioning.
 Users can now install your package:
 
 ```bash
-  composer require my-vendor/my-package:^0.1
+  composer require lmf/your-package-name:^0.1
 ```
 
 #### 9) Optional: Laravel package specifics
@@ -161,7 +163,7 @@ If your package targets Laravel:
 {
     "extra": {
         "laravel": {
-            "providers": ["MyVendor\\MyPackage\\MyPackageServiceProvider"]
+            "providers": ["Lmf\\\\YourPackage\\\\YourPackageServiceProvider"]
         }
     }
 }
@@ -183,7 +185,7 @@ Copy and adapt:
 
 ```json
 {
-    "name": "my-vendor/my-package",
+    "name": "lmf/your-package-name",
     "description": "Short description",
     "type": "library",
     "license": "MIT",
@@ -193,7 +195,7 @@ Copy and adapt:
     },
     "autoload": {
         "psr-4": {
-            "MyVendor\\MyPackage\\": "src/"
+            "Lmf\\\\YourPackage\\\\": "src/"
         }
     },
     "require-dev": {
