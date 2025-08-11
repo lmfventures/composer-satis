@@ -5,10 +5,15 @@
         {
             "type": "vcs",
             "url": "git@github.com:lmfventures/package-ocr.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:lmfventures/package-custom-generator.git"
         }
     ],
     "require": {
-        "lmf/package-ocr": "*"
+        "lmf/package-ocr": "*",
+        "lmf/custom-generator": "*"
     },
     "require-all": false,
     "require-dependencies": true,

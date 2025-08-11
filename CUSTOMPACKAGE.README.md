@@ -140,11 +140,9 @@ Use Semantic Versioning.
     git push -u origin main --tags
 ```
 
-#### 8) Publish to Packagist
+#### 8) Publish to Github
 
-- Create an account at `https://packagist.org`
-- Submit your repository URL
-- Ensure GitHub/GitLab hooks are active so Packagist auto-updates on new tags
+- Ensure GitHub hooks are active so Satis auto-updates on new tags
 
 Users can now install your package:
 

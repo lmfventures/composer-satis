@@ -1,0 +1,54 @@
+{
+    "packages": {
+        "lmf/custom-generator": [
+            {
+                "name": "lmf/custom-generator",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-custom-generator.git",
+                    "reference": "c1e688abfe2b7c23fbec2928856fc1c9fcbd9492"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-custom-generator/zipball/c1e688abfe2b7c23fbec2928856fc1c9fcbd9492",
+                    "reference": "c1e688abfe2b7c23fbec2928856fc1c9fcbd9492",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/support": "^10.0|^11.0|^12.0",
+                    "laravel/prompts": "^0.1 || ^0.2 || ^0.3",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-11T08:24:55+00:00",
+                "default-branch": true,
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\CustomGenerator\\CustomGeneratorServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\CustomGenerator\\": "src/"
+                    }
+                },
+                "license": ["MIT"],
+                "authors": [
+                    {
+                        "name": "Ryan Abuyabor",
+                        "email": "ryan@plxrmedia.com"
+                    }
+                ],
+                "description": "Enhanced Artisan commands for generating models, migrations, requests, resources, repositories, and cache classes with advanced features",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-custom-generator/tree/main",
+                    "issues": "https://github.com/lmfventures/package-custom-generator/issues"
+                }
+            }
+        ]
+    }
+}

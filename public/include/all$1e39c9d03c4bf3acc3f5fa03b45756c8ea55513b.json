@@ -1,0 +1,315 @@
+{
+    "packages": {
+        "lmf/custom-generator": {
+            "v1.0.0": {
+                "name": "lmf/custom-generator",
+                "version": "v1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-custom-generator.git",
+                    "reference": "7ddcebc3ed1739607151e62e81a9a6b087f8391d"
+                },
+                "dist": {
+                    "type": "tar",
+                    "url": "https://lmfventures.github.io/composer-satis/dist/lmf/custom-generator/lmf-custom-generator-7ddcebc3ed1739607151e62e81a9a6b087f8391d-zip-46c211.tar",
+                    "reference": "7ddcebc3ed1739607151e62e81a9a6b087f8391d",
+                    "shasum": "a552a9ded21d7a2d9dd969fb6845eb3f21e3935a"
+                },
+                "require": {
+                    "laravel/framework": "^10.0|^11.0",
+                    "laravel/prompts": "^0.1.0",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-11T06:08:03+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\CustomGenerator\\CustomGeneratorServiceProvider"
+                        ]
+                    }
+                },
+                "installation-source": "dist",
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\CustomGenerator\\": "src/"
+                    }
+                },
+                "license": ["MIT"],
+                "authors": [
+                    {
+                        "name": "Ryan Abuyabor",
+                        "email": "ryan@plxrmedia.com"
+                    }
+                ],
+                "description": "Enhanced Artisan commands for generating models, migrations, requests, resources, repositories, and cache classes with advanced features",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-custom-generator/tree/v1.0.0",
+                    "issues": "https://github.com/lmfventures/package-custom-generator/issues"
+                }
+            },
+            "v1.0.1": {
+                "name": "lmf/custom-generator",
+                "version": "v1.0.1",
+                "version_normalized": "1.0.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-custom-generator.git",
+                    "reference": "3204ea8526b72d7d74ca87e68a7d61a3275c8677"
+                },
+                "dist": {
+                    "type": "tar",
+                    "url": "https://lmfventures.github.io/composer-satis/dist/lmf/custom-generator/lmf-custom-generator-3204ea8526b72d7d74ca87e68a7d61a3275c8677-zip-c443d2.tar",
+                    "reference": "3204ea8526b72d7d74ca87e68a7d61a3275c8677",
+                    "shasum": "6c30978c9128c667e90d77a86de5db9b5ae87029"
+                },
+                "require": {
+                    "laravel/framework": "^10.0|^11.0|^12.0",
+                    "laravel/prompts": "^0.1.0",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-11T06:43:43+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\CustomGenerator\\CustomGeneratorServiceProvider"
+                        ]
+                    }
+                },
+                "installation-source": "dist",
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\CustomGenerator\\": "src/"
+                    }
+                },
+                "license": ["MIT"],
+                "authors": [
+                    {
+                        "name": "Ryan Abuyabor",
+                        "email": "ryan@plxrmedia.com"
+                    }
+                ],
+                "description": "Enhanced Artisan commands for generating models, migrations, requests, resources, repositories, and cache classes with advanced features",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-custom-generator/tree/v1.0.1",
+                    "issues": "https://github.com/lmfventures/package-custom-generator/issues"
+                }
+            },
+            "v1.0.2": {
+                "name": "lmf/custom-generator",
+                "version": "v1.0.2",
+                "version_normalized": "1.0.2.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-custom-generator.git",
+                    "reference": "08b00ca635355a1dc627d5e57d093537e2c7b7ac"
+                },
+                "dist": {
+                    "type": "tar",
+                    "url": "https://lmfventures.github.io/composer-satis/dist/lmf/custom-generator/lmf-custom-generator-08b00ca635355a1dc627d5e57d093537e2c7b7ac-zip-f668cf.tar",
+                    "reference": "08b00ca635355a1dc627d5e57d093537e2c7b7ac",
+                    "shasum": "c14100ad99fc77fa1ebad6dceccf11aea3ac8d03"
+                },
+                "require": {
+                    "illuminate/support": "^10.0|^11.0|^12.0",
+                    "laravel/prompts": "^0.1 || ^0.2 || ^0.3",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-11T07:06:30+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\CustomGenerator\\CustomGeneratorServiceProvider"
+                        ]
+                    }
+                },
+                "installation-source": "dist",
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\CustomGenerator\\": "src/"
+                    }
+                },
+                "license": ["MIT"],
+                "authors": [
+                    {
+                        "name": "Ryan Abuyabor",
+                        "email": "ryan@plxrmedia.com"
+                    }
+                ],
+                "description": "Enhanced Artisan commands for generating models, migrations, requests, resources, repositories, and cache classes with advanced features",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-custom-generator/tree/v1.0.2",
+                    "issues": "https://github.com/lmfventures/package-custom-generator/issues"
+                }
+            },
+            "dev-main": {
+                "name": "lmf/custom-generator",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-custom-generator.git",
+                    "reference": "c1e688abfe2b7c23fbec2928856fc1c9fcbd9492"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-custom-generator/zipball/c1e688abfe2b7c23fbec2928856fc1c9fcbd9492",
+                    "reference": "c1e688abfe2b7c23fbec2928856fc1c9fcbd9492",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/support": "^10.0|^11.0|^12.0",
+                    "laravel/prompts": "^0.1 || ^0.2 || ^0.3",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-11T08:24:55+00:00",
+                "default-branch": true,
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\CustomGenerator\\CustomGeneratorServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\CustomGenerator\\": "src/"
+                    }
+                },
+                "license": ["MIT"],
+                "authors": [
+                    {
+                        "name": "Ryan Abuyabor",
+                        "email": "ryan@plxrmedia.com"
+                    }
+                ],
+                "description": "Enhanced Artisan commands for generating models, migrations, requests, resources, repositories, and cache classes with advanced features",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-custom-generator/tree/main",
+                    "issues": "https://github.com/lmfventures/package-custom-generator/issues"
+                }
+            }
+        },
+        "lmf/package-ocr": {
+            "v1.0.0": {
+                "name": "lmf/package-ocr",
+                "version": "v1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-ocr.git",
+                    "reference": "626e6f52477c9a3fe3587252595990086c109be9"
+                },
+                "dist": {
+                    "type": "tar",
+                    "url": "https://lmfventures.github.io/composer-satis/dist/lmf/package-ocr/lmf-package-ocr-626e6f52477c9a3fe3587252595990086c109be9-zip-d1d5b9.tar",
+                    "reference": "626e6f52477c9a3fe3587252595990086c109be9",
+                    "shasum": "340cd2f8ef0692bb84e7bc3029d621739fe4e167"
+                },
+                "require": {
+                    "google/cloud-vision": "^2.0",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-01T03:04:32+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": ["OcrTools\\OcrServiceProvider"]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "OcrTools\\": "src/"
+                    }
+                },
+                "license": ["MIT"],
+                "description": "Laravel package for OCR scanning and parsing using Google Cloud Vision API.",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-ocr/tree/v1.0.0",
+                    "issues": "https://github.com/lmfventures/package-ocr/issues"
+                }
+            },
+            "v1.0.1": {
+                "name": "lmf/package-ocr",
+                "version": "v1.0.1",
+                "version_normalized": "1.0.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-ocr.git",
+                    "reference": "25af83460a777fae5e882f6b70d1c0dcb0728622"
+                },
+                "dist": {
+                    "type": "tar",
+                    "url": "https://lmfventures.github.io/composer-satis/dist/lmf/package-ocr/lmf-package-ocr-25af83460a777fae5e882f6b70d1c0dcb0728622-zip-9a78c7.tar",
+                    "reference": "25af83460a777fae5e882f6b70d1c0dcb0728622",
+                    "shasum": "87658cbd0049cb75f368f824d60001a2e77ad8db"
+                },
+                "require": {
+                    "google/cloud-vision": "^2.0",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-01T05:16:22+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": ["OcrTools\\OcrServiceProvider"]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "OcrTools\\": "src/"
+                    }
+                },
+                "license": ["MIT"],
+                "description": "Laravel package for OCR scanning and parsing using Google Cloud Vision API.",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-ocr/tree/v1.0.1",
+                    "issues": "https://github.com/lmfventures/package-ocr/issues"
+                }
+            },
+            "dev-main": {
+                "name": "lmf/package-ocr",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-ocr.git",
+                    "reference": "25af83460a777fae5e882f6b70d1c0dcb0728622"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-ocr/zipball/25af83460a777fae5e882f6b70d1c0dcb0728622",
+                    "reference": "25af83460a777fae5e882f6b70d1c0dcb0728622",
+                    "shasum": ""
+                },
+                "require": {
+                    "google/cloud-vision": "^2.0",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-01T05:16:22+00:00",
+                "default-branch": true,
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": ["OcrTools\\OcrServiceProvider"]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "OcrTools\\": "src/"
+                    }
+                },
+                "license": ["MIT"],
+                "description": "Laravel package for OCR scanning and parsing using Google Cloud Vision API.",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-ocr/tree/v1.0.1",
+                    "issues": "https://github.com/lmfventures/package-ocr/issues"
+                }
+            }
+        }
+    }
+}
