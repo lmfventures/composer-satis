@@ -18,10 +18,10 @@
     "require-all": false,
     "require-dependencies": true,
     "require-dev-dependencies": false,
+    "minimum-stability": "stable",
+    "prefer-stable": true,
     "config": {
-        "secure-http": true,
-        "minimum-stability": "stable",
-        "prefer-stable": true
+        "secure-http": true
     },
     "output-dir": "public",
     "output-html": true,
@@ -29,7 +29,7 @@
     "archive": {
         "directory": "dist",
         "format": "tar",
-        "prefix-url": "https://lmfventures.github.io/composer-satis",
+        "prefix-url": "https://lmfventures.github.io/composer-satis/dist",
         "skip-dev": true
     }
 }
