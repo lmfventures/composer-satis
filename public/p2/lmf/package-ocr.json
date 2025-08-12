@@ -24,7 +24,9 @@
                 "type": "library",
                 "extra": {
                     "laravel": {
-                        "providers": ["OcrTools\\OcrServiceProvider"]
+                        "providers": [
+                            "OcrTools\\OcrServiceProvider"
+                        ]
                     }
                 },
                 "autoload": {
@@ -32,7 +34,9 @@
                         "OcrTools\\": "src/"
                     }
                 },
-                "license": ["MIT"],
+                "license": [
+                    "MIT"
+                ],
                 "description": "Laravel package for OCR scanning and parsing using Google Cloud Vision API.",
                 "support": {
                     "source": "https://github.com/lmfventures/package-ocr/tree/v1.0.0",
@@ -62,7 +66,9 @@
                 "type": "library",
                 "extra": {
                     "laravel": {
-                        "providers": ["OcrTools\\OcrServiceProvider"]
+                        "providers": [
+                            "OcrTools\\OcrServiceProvider"
+                        ]
                     }
                 },
                 "autoload": {
@@ -70,7 +76,9 @@
                         "OcrTools\\": "src/"
                     }
                 },
-                "license": ["MIT"],
+                "license": [
+                    "MIT"
+                ],
                 "description": "Laravel package for OCR scanning and parsing using Google Cloud Vision API.",
                 "support": {
                     "source": "https://github.com/lmfventures/package-ocr/tree/v1.0.1",
@@ -101,7 +109,9 @@
                 "type": "library",
                 "extra": {
                     "laravel": {
-                        "providers": ["Lmf\\PackageOcr\\OcrServiceProvider"]
+                        "providers": [
+                            "Lmf\\PackageOcr\\OcrServiceProvider"
+                        ]
                     }
                 },
                 "autoload": {
@@ -109,7 +119,9 @@
                         "Lmf\\PackageOcr\\": "src/"
                     }
                 },
-                "license": ["MIT"],
+                "license": [
+                    "MIT"
+                ],
                 "authors": [
                     {
                         "name": "Allen Pagnanawon",
@@ -146,7 +158,9 @@
                 "type": "library",
                 "extra": {
                     "laravel": {
-                        "providers": ["Lmf\\PackageOcr\\OcrServiceProvider"]
+                        "providers": [
+                            "Lmf\\PackageOcr\\OcrServiceProvider"
+                        ]
                     }
                 },
                 "autoload": {
@@ -154,7 +168,9 @@
                         "Lmf\\PackageOcr\\": "src/"
                     }
                 },
-                "license": ["MIT"],
+                "license": [
+                    "MIT"
+                ],
                 "authors": [
                     {
                         "name": "Allen Pagnanawon",

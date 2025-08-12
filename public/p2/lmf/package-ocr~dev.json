@@ -26,7 +26,9 @@
                 "type": "library",
                 "extra": {
                     "laravel": {
-                        "providers": ["Lmf\\PackageOcr\\OcrServiceProvider"]
+                        "providers": [
+                            "Lmf\\PackageOcr\\OcrServiceProvider"
+                        ]
                     }
                 },
                 "autoload": {
@@ -34,7 +36,9 @@
                         "Lmf\\PackageOcr\\": "src/"
                     }
                 },
-                "license": ["MIT"],
+                "license": [
+                    "MIT"
+                ],
                 "authors": [
                     {
                         "name": "Allen Pagnanawon",

@@ -36,7 +36,9 @@
                         "Lmf\\CustomGenerator\\": "src/"
                     }
                 },
-                "license": ["MIT"],
+                "license": [
+                    "MIT"
+                ],
                 "authors": [
                     {
                         "name": "Ryan Abuyabor",
