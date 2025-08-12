@@ -4,11 +4,13 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "git@github.com:lmfventures/package-ocr.git"
+            "url": "git@github.com:lmfventures/package-ocr.git",
+            "name": "lmf/package-ocr"
         },
         {
             "type": "vcs",
-            "url": "git@github.com:lmfventures/package-custom-generator.git"
+            "url": "git@github.com:lmfventures/package-custom-generator.git",
+            "name": "lmf/custom-generator"
         }
     ],
     "require": {
