@@ -11,10 +11,10 @@
                     "reference": "7ddcebc3ed1739607151e62e81a9a6b087f8391d"
                 },
                 "dist": {
-                    "type": "tar",
-                    "url": "https://lmfventures.github.io/composer-satis/dist/lmf/custom-generator/lmf-custom-generator-7ddcebc3ed1739607151e62e81a9a6b087f8391d-zip-46c211.tar",
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-custom-generator/zipball/7ddcebc3ed1739607151e62e81a9a6b087f8391d",
                     "reference": "7ddcebc3ed1739607151e62e81a9a6b087f8391d",
-                    "shasum": "8b5b1613e347d911e4f944a7ce3f4a4ad7affc2a"
+                    "shasum": ""
                 },
                 "require": {
                     "laravel/framework": "^10.0|^11.0",
@@ -58,10 +58,10 @@
                     "reference": "3204ea8526b72d7d74ca87e68a7d61a3275c8677"
                 },
                 "dist": {
-                    "type": "tar",
-                    "url": "https://lmfventures.github.io/composer-satis/dist/lmf/custom-generator/lmf-custom-generator-3204ea8526b72d7d74ca87e68a7d61a3275c8677-zip-c443d2.tar",
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-custom-generator/zipball/3204ea8526b72d7d74ca87e68a7d61a3275c8677",
                     "reference": "3204ea8526b72d7d74ca87e68a7d61a3275c8677",
-                    "shasum": "ad078a030efe611a6024944ec2582274dda5e68f"
+                    "shasum": ""
                 },
                 "require": {
                     "laravel/framework": "^10.0|^11.0|^12.0",
@@ -105,10 +105,10 @@
                     "reference": "08b00ca635355a1dc627d5e57d093537e2c7b7ac"
                 },
                 "dist": {
-                    "type": "tar",
-                    "url": "https://lmfventures.github.io/composer-satis/dist/lmf/custom-generator/lmf-custom-generator-08b00ca635355a1dc627d5e57d093537e2c7b7ac-zip-f668cf.tar",
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-custom-generator/zipball/08b00ca635355a1dc627d5e57d093537e2c7b7ac",
                     "reference": "08b00ca635355a1dc627d5e57d093537e2c7b7ac",
-                    "shasum": "4df267f75e209af97142c73ab37b19e3d7357f25"
+                    "shasum": ""
                 },
                 "require": {
                     "illuminate/support": "^10.0|^11.0|^12.0",
@@ -202,10 +202,10 @@
                     "reference": "626e6f52477c9a3fe3587252595990086c109be9"
                 },
                 "dist": {
-                    "type": "tar",
-                    "url": "https://lmfventures.github.io/composer-satis/dist/lmf/package-ocr/lmf-package-ocr-626e6f52477c9a3fe3587252595990086c109be9-zip-d1d5b9.tar",
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-ocr/zipball/626e6f52477c9a3fe3587252595990086c109be9",
                     "reference": "626e6f52477c9a3fe3587252595990086c109be9",
-                    "shasum": "908fbeda97317ddf82bdcdd75b3c5e633dcfc9a8"
+                    "shasum": ""
                 },
                 "require": {
                     "google/cloud-vision": "^2.0",
@@ -240,10 +240,10 @@
                     "reference": "25af83460a777fae5e882f6b70d1c0dcb0728622"
                 },
                 "dist": {
-                    "type": "tar",
-                    "url": "https://lmfventures.github.io/composer-satis/dist/lmf/package-ocr/lmf-package-ocr-25af83460a777fae5e882f6b70d1c0dcb0728622-zip-9a78c7.tar",
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-ocr/zipball/25af83460a777fae5e882f6b70d1c0dcb0728622",
                     "reference": "25af83460a777fae5e882f6b70d1c0dcb0728622",
-                    "shasum": "e328619e8a35339ff34bf2698c3cd1973e281b60"
+                    "shasum": ""
                 },
                 "require": {
                     "google/cloud-vision": "^2.0",
@@ -278,10 +278,10 @@
                     "reference": "dad0c97fed60b3abd290c24ffab49f665f3247a0"
                 },
                 "dist": {
-                    "type": "tar",
-                    "url": "https://lmfventures.github.io/composer-satis/dist/lmf/package-ocr/lmf-package-ocr-dad0c97fed60b3abd290c24ffab49f665f3247a0-zip-d5c710.tar",
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-ocr/zipball/dad0c97fed60b3abd290c24ffab49f665f3247a0",
                     "reference": "dad0c97fed60b3abd290c24ffab49f665f3247a0",
-                    "shasum": "f9804c457ad2598ccf9cbf0f5a2c875c64f1c013"
+                    "shasum": ""
                 },
                 "require": {
                     "illuminate/support": "^10.0|^11.0|^12.0",
@@ -323,10 +323,10 @@
                     "reference": "2194c908fdd81fbdb3414e2dbd2780f6a63d8cdd"
                 },
                 "dist": {
-                    "type": "tar",
-                    "url": "https://lmfventures.github.io/composer-satis/dist/lmf/package-ocr/lmf-package-ocr-2194c908fdd81fbdb3414e2dbd2780f6a63d8cdd-zip-21a84a.tar",
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-ocr/zipball/2194c908fdd81fbdb3414e2dbd2780f6a63d8cdd",
                     "reference": "2194c908fdd81fbdb3414e2dbd2780f6a63d8cdd",
-                    "shasum": "b34c05e42e7089554bc9af8edb45c588f2fdf82f"
+                    "shasum": ""
                 },
                 "require": {
                     "illuminate/support": "^10.0|^11.0|^12.0",
