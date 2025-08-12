@@ -2,73 +2,65 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
-  workflow_dispatch:
-  schedule:
-    - cron: '0 */6 * * *' # Run every 6 hours
+    branches: [ main ]  # Run whenever you push to main
+  workflow_dispatch:     # Allow manual trigger
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
-          token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Setup PHP
-        uses: shivammathur/setup-php@v2
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          php-version: '8.2'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          force_orphan: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+name: Deploy to GitHub Pages
 
-      - name: Configure Git
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+on:
+  push:
+    branches: [ main ]  # Run whenever you push to main
+  workflow_dispatch:     # Allow manual trigger
 
-      - name: Install Composer dependencies
-        run: composer install --no-dev --optimize-autoloader
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Configure Git to use PAT for GitHub
-        if: ${{ secrets.PAT_TOKEN != '' }}
-        env:
-          PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
-        run: |
-          git config --global url."https://x-access-token:${PAT_TOKEN}@github.com/".insteadOf "git@github.com:"
-          git config --global url."https://x-access-token:${PAT_TOKEN}@github.com/".insteadOf "https://github.com/"
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          force_orphan: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+name: Deploy to GitHub Pages
 
-      - name: Configure Composer GitHub token
-        if: ${{ secrets.PAT_TOKEN != '' }}
-        run: composer config -g github-oauth.github.com "${{ secrets.PAT_TOKEN }}"
+on:
+  push:
+    branches: [ main ]  # Run whenever you push to main
+  workflow_dispatch:     # Allow manual trigger
 
-      - name: Check for new releases
-        run: |
-          REPO_HTTPS="https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
-          echo "Checking tags in $REPO_HTTPS"
-          LATEST_TAG=$(git ls-remote --tags "$REPO_HTTPS" | awk '{print $2}' | sed 's#refs/tags/##' | tail -n1)
-          echo "Latest tag: $LATEST_TAG"
-          echo "LATEST_TAG=$LATEST_TAG" >> $GITHUB_ENV
-
-          if [ -f "last_built_tag.txt" ]; then
-            LAST_BUILT=$(cat last_built_tag.txt)
-            if [ "$LATEST_TAG" = "$LAST_BUILT" ]; then
-              echo "No new releases found. Skipping build."
-              echo "SKIP_BUILD=true" >> $GITHUB_ENV
-            else
-              echo "New release found: $LATEST_TAG"
-              echo "SKIP_BUILD=false" >> $GITHUB_ENV
-            fi
-          else
-            echo "First build, proceeding..."
-            echo "SKIP_BUILD=false" >> $GITHUB_ENV
-          fi
-
-      - name: Build Satis repository
-        if: env.SKIP_BUILD != 'true'
-        run: |
-          php bin/satis build satis.json public/
-          echo "$LATEST_TAG" > last_built_tag.txt
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
