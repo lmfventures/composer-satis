@@ -25,11 +25,5 @@
     },
     "output-dir": "public",
     "output-html": true,
-    "allow-seo-indexing": true,
-    "archive": {
-        "directory": "dist",
-        "format": "tar",
-        "prefix-url": "https://lmfventures.github.io/composer-satis",
-        "skip-dev": true
-    }
+    "allow-seo-indexing": true
 }
