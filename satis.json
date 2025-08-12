@@ -11,11 +11,17 @@
             "type": "vcs",
             "url": "git@github.com:lmfventures/package-custom-generator.git",
             "name": "lmf/custom-generator"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:lmfventures/sms-service.git",
+            "name": "lmf/sms-service"
         }
     ],
     "require": {
         "lmf/package-ocr": "*",
-        "lmf/custom-generator": "*"
+        "lmf/custom-generator": "*",
+        "lmf/sms-service": "*"
     },
     "require-all": false,
     "require-dependencies": true,
