@@ -14,7 +14,7 @@
                     "type": "tar",
                     "url": "https://lmfventures.github.io/composer-satis/dist/lmf/custom-generator/lmf-custom-generator-7ddcebc3ed1739607151e62e81a9a6b087f8391d-zip-46c211.tar",
                     "reference": "7ddcebc3ed1739607151e62e81a9a6b087f8391d",
-                    "shasum": "51beb173030559cbe9b1c5f457688c7754b4c790"
+                    "shasum": "8b5b1613e347d911e4f944a7ce3f4a4ad7affc2a"
                 },
                 "require": {
                     "laravel/framework": "^10.0|^11.0",
@@ -30,7 +30,6 @@
                         ]
                     }
                 },
-                "installation-source": "dist",
                 "autoload": {
                     "psr-4": {
                         "Lmf\\CustomGenerator\\": "src/"
@@ -62,7 +61,7 @@
                     "type": "tar",
                     "url": "https://lmfventures.github.io/composer-satis/dist/lmf/custom-generator/lmf-custom-generator-3204ea8526b72d7d74ca87e68a7d61a3275c8677-zip-c443d2.tar",
                     "reference": "3204ea8526b72d7d74ca87e68a7d61a3275c8677",
-                    "shasum": "e80f172ff6eecea9d0eadf5a2137ad0ea9928f7d"
+                    "shasum": "ad078a030efe611a6024944ec2582274dda5e68f"
                 },
                 "require": {
                     "laravel/framework": "^10.0|^11.0|^12.0",
@@ -78,7 +77,6 @@
                         ]
                     }
                 },
-                "installation-source": "dist",
                 "autoload": {
                     "psr-4": {
                         "Lmf\\CustomGenerator\\": "src/"
@@ -110,7 +108,7 @@
                     "type": "tar",
                     "url": "https://lmfventures.github.io/composer-satis/dist/lmf/custom-generator/lmf-custom-generator-08b00ca635355a1dc627d5e57d093537e2c7b7ac-zip-f668cf.tar",
                     "reference": "08b00ca635355a1dc627d5e57d093537e2c7b7ac",
-                    "shasum": "beadc9d30b62211178b41f1b42dc522c32f29ac1"
+                    "shasum": "4df267f75e209af97142c73ab37b19e3d7357f25"
                 },
                 "require": {
                     "illuminate/support": "^10.0|^11.0|^12.0",
@@ -126,7 +124,6 @@
                         ]
                     }
                 },
-                "installation-source": "dist",
                 "autoload": {
                     "psr-4": {
                         "Lmf\\CustomGenerator\\": "src/"
@@ -208,7 +205,7 @@
                     "type": "tar",
                     "url": "https://lmfventures.github.io/composer-satis/dist/lmf/package-ocr/lmf-package-ocr-626e6f52477c9a3fe3587252595990086c109be9-zip-d1d5b9.tar",
                     "reference": "626e6f52477c9a3fe3587252595990086c109be9",
-                    "shasum": "aa457251d6a4d9f42ae639db7d1fe26fc6a8ce95"
+                    "shasum": "908fbeda97317ddf82bdcdd75b3c5e633dcfc9a8"
                 },
                 "require": {
                     "google/cloud-vision": "^2.0",
@@ -221,7 +218,6 @@
                         "providers": ["OcrTools\\OcrServiceProvider"]
                     }
                 },
-                "installation-source": "dist",
                 "autoload": {
                     "psr-4": {
                         "OcrTools\\": "src/"
@@ -247,7 +243,7 @@
                     "type": "tar",
                     "url": "https://lmfventures.github.io/composer-satis/dist/lmf/package-ocr/lmf-package-ocr-25af83460a777fae5e882f6b70d1c0dcb0728622-zip-9a78c7.tar",
                     "reference": "25af83460a777fae5e882f6b70d1c0dcb0728622",
-                    "shasum": "7b7e33f161ca82e1cd8ad49c3a911caa0f1981cb"
+                    "shasum": "e328619e8a35339ff34bf2698c3cd1973e281b60"
                 },
                 "require": {
                     "google/cloud-vision": "^2.0",
@@ -260,7 +256,6 @@
                         "providers": ["OcrTools\\OcrServiceProvider"]
                     }
                 },
-                "installation-source": "dist",
                 "autoload": {
                     "psr-4": {
                         "OcrTools\\": "src/"
@@ -286,7 +281,7 @@
                     "type": "tar",
                     "url": "https://lmfventures.github.io/composer-satis/dist/lmf/package-ocr/lmf-package-ocr-dad0c97fed60b3abd290c24ffab49f665f3247a0-zip-d5c710.tar",
                     "reference": "dad0c97fed60b3abd290c24ffab49f665f3247a0",
-                    "shasum": "444a8767a46e14d21c6342d921d726ea50022e30"
+                    "shasum": "f9804c457ad2598ccf9cbf0f5a2c875c64f1c013"
                 },
                 "require": {
                     "illuminate/support": "^10.0|^11.0|^12.0",
@@ -300,7 +295,6 @@
                         "providers": ["Lmf\\PackageOcr\\OcrServiceProvider"]
                     }
                 },
-                "installation-source": "dist",
                 "autoload": {
                     "psr-4": {
                         "Lmf\\PackageOcr\\": "src/"
@@ -319,6 +313,51 @@
                     "issues": "https://github.com/lmfventures/package-ocr/issues"
                 }
             },
+            "v1.0.3": {
+                "name": "lmf/package-ocr",
+                "version": "v1.0.3",
+                "version_normalized": "1.0.3.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-ocr.git",
+                    "reference": "2194c908fdd81fbdb3414e2dbd2780f6a63d8cdd"
+                },
+                "dist": {
+                    "type": "tar",
+                    "url": "https://lmfventures.github.io/composer-satis/dist/lmf/package-ocr/lmf-package-ocr-2194c908fdd81fbdb3414e2dbd2780f6a63d8cdd-zip-21a84a.tar",
+                    "reference": "2194c908fdd81fbdb3414e2dbd2780f6a63d8cdd",
+                    "shasum": "b34c05e42e7089554bc9af8edb45c588f2fdf82f"
+                },
+                "require": {
+                    "illuminate/support": "^10.0|^11.0|^12.0",
+                    "laravel/prompts": "^0.1 || ^0.2 || ^0.3",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-12T01:07:41+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": ["Lmf\\PackageOcr\\OcrServiceProvider"]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\PackageOcr\\": "src/"
+                    }
+                },
+                "license": ["MIT"],
+                "authors": [
+                    {
+                        "name": "Allen Pagnanawon",
+                        "email": "allen@lmf.ventures"
+                    }
+                ],
+                "description": "Laravel package for OCR scanning and parsing using Google Cloud Vision API.",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-ocr/tree/v1.0.3",
+                    "issues": "https://github.com/lmfventures/package-ocr/issues"
+                }
+            },
             "dev-main": {
                 "name": "lmf/package-ocr",
                 "version": "dev-main",
@@ -326,12 +365,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:lmfventures/package-ocr.git",
-                    "reference": "dad0c97fed60b3abd290c24ffab49f665f3247a0"
+                    "reference": "2194c908fdd81fbdb3414e2dbd2780f6a63d8cdd"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/lmfventures/package-ocr/zipball/dad0c97fed60b3abd290c24ffab49f665f3247a0",
-                    "reference": "dad0c97fed60b3abd290c24ffab49f665f3247a0",
+                    "url": "https://api.github.com/repos/lmfventures/package-ocr/zipball/2194c908fdd81fbdb3414e2dbd2780f6a63d8cdd",
+                    "reference": "2194c908fdd81fbdb3414e2dbd2780f6a63d8cdd",
                     "shasum": ""
                 },
                 "require": {
@@ -339,7 +378,7 @@
                     "laravel/prompts": "^0.1 || ^0.2 || ^0.3",
                     "php": "^8.1"
                 },
-                "time": "2025-08-11T08:51:47+00:00",
+                "time": "2025-08-12T01:07:41+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
@@ -361,7 +400,7 @@
                 ],
                 "description": "Laravel package for OCR scanning and parsing using Google Cloud Vision API.",
                 "support": {
-                    "source": "https://github.com/lmfventures/package-ocr/tree/v1.0.2",
+                    "source": "https://github.com/lmfventures/package-ocr/tree/v1.0.3",
                     "issues": "https://github.com/lmfventures/package-ocr/issues"
                 }
             }

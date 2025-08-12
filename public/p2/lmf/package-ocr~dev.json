@@ -8,12 +8,12 @@
                 "source": {
                     "type": "git",
                     "url": "git@github.com:lmfventures/package-ocr.git",
-                    "reference": "dad0c97fed60b3abd290c24ffab49f665f3247a0"
+                    "reference": "2194c908fdd81fbdb3414e2dbd2780f6a63d8cdd"
                 },
                 "dist": {
                     "type": "zip",
-                    "url": "https://api.github.com/repos/lmfventures/package-ocr/zipball/dad0c97fed60b3abd290c24ffab49f665f3247a0",
-                    "reference": "dad0c97fed60b3abd290c24ffab49f665f3247a0",
+                    "url": "https://api.github.com/repos/lmfventures/package-ocr/zipball/2194c908fdd81fbdb3414e2dbd2780f6a63d8cdd",
+                    "reference": "2194c908fdd81fbdb3414e2dbd2780f6a63d8cdd",
                     "shasum": ""
                 },
                 "require": {
@@ -21,7 +21,7 @@
                     "laravel/prompts": "^0.1 || ^0.2 || ^0.3",
                     "php": "^8.1"
                 },
-                "time": "2025-08-11T08:51:47+00:00",
+                "time": "2025-08-12T01:07:41+00:00",
                 "default-branch": true,
                 "type": "library",
                 "extra": {
@@ -43,7 +43,7 @@
                 ],
                 "description": "Laravel package for OCR scanning and parsing using Google Cloud Vision API.",
                 "support": {
-                    "source": "https://github.com/lmfventures/package-ocr/tree/v1.0.2",
+                    "source": "https://github.com/lmfventures/package-ocr/tree/v1.0.3",
                     "issues": "https://github.com/lmfventures/package-ocr/issues"
                 }
             }
