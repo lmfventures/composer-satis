@@ -404,6 +404,127 @@
                     "issues": "https://github.com/lmfventures/package-ocr/issues"
                 }
             }
+        },
+        "lmf/sms-service": {
+            "v1.0.0": {
+                "name": "lmf/sms-service",
+                "version": "v1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/sms-service.git",
+                    "reference": "e8491438ec9f49693aacb3cccb0c50bc03c1cb21"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/sms-service/zipball/e8491438ec9f49693aacb3cccb0c50bc03c1cb21",
+                    "reference": "e8491438ec9f49693aacb3cccb0c50bc03c1cb21",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/config": "^9.0|^10.0|^11.0|^12.0",
+                    "illuminate/notifications": "^9.0|^10.0|^11.0|^12.0",
+                    "illuminate/support": "^9.0|^10.0|^11.0|^12.0",
+                    "php": "^8.1",
+                    "propaganistas/laravel-phone": "^4.0|^5.0"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0",
+                    "phpunit/phpunit": "^9.0|^10.0|^11.0"
+                },
+                "time": "2025-08-12T06:22:35+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": ["Lmf\\SmsService\\SmsServiceProvider"],
+                        "aliases": {
+                            "Sms": "Lmf\\SmsService\\Facades\\Sms"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\SmsService\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Lmf\\SmsService\\Tests\\": "tests/"
+                    }
+                },
+                "license": ["MIT"],
+                "authors": [
+                    {
+                        "name": "Ed Paul Valencia",
+                        "email": "ed@plxrmedia.com"
+                    }
+                ],
+                "description": "SMS Service Package - A Laravel SMS service supporting multiple drivers with notification channel support",
+                "support": {
+                    "source": "https://github.com/lmfventures/sms-service/tree/v1.0.0",
+                    "issues": "https://github.com/lmfventures/sms-service/issues"
+                }
+            },
+            "dev-main": {
+                "name": "lmf/sms-service",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/sms-service.git",
+                    "reference": "e8491438ec9f49693aacb3cccb0c50bc03c1cb21"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/sms-service/zipball/e8491438ec9f49693aacb3cccb0c50bc03c1cb21",
+                    "reference": "e8491438ec9f49693aacb3cccb0c50bc03c1cb21",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/config": "^9.0|^10.0|^11.0|^12.0",
+                    "illuminate/notifications": "^9.0|^10.0|^11.0|^12.0",
+                    "illuminate/support": "^9.0|^10.0|^11.0|^12.0",
+                    "php": "^8.1",
+                    "propaganistas/laravel-phone": "^4.0|^5.0"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0",
+                    "phpunit/phpunit": "^9.0|^10.0|^11.0"
+                },
+                "time": "2025-08-12T06:22:35+00:00",
+                "default-branch": true,
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": ["Lmf\\SmsService\\SmsServiceProvider"],
+                        "aliases": {
+                            "Sms": "Lmf\\SmsService\\Facades\\Sms"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\SmsService\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Lmf\\SmsService\\Tests\\": "tests/"
+                    }
+                },
+                "license": ["MIT"],
+                "authors": [
+                    {
+                        "name": "Ed Paul Valencia",
+                        "email": "ed@plxrmedia.com"
+                    }
+                ],
+                "description": "SMS Service Package - A Laravel SMS service supporting multiple drivers with notification channel support",
+                "support": {
+                    "source": "https://github.com/lmfventures/sms-service/tree/v1.0.0",
+                    "issues": "https://github.com/lmfventures/sms-service/issues"
+                }
+            }
         }
     }
 }

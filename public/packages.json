@@ -1,10 +1,14 @@
 {
     "packages": [],
     "includes": {
-        "include/all$14b98c39989555b72deb9c4bf7a0af9053b98b21.json": {
-            "sha1": "14b98c39989555b72deb9c4bf7a0af9053b98b21"
+        "include/all$7e908492ea9c88de39da0b5081e13d5776b6ccc2.json": {
+            "sha1": "7e908492ea9c88de39da0b5081e13d5776b6ccc2"
         }
     },
     "metadata-url": "/composer-satis/p2/%package%.json",
-    "available-packages": ["lmf/custom-generator", "lmf/package-ocr"]
+    "available-packages": [
+        "lmf/custom-generator",
+        "lmf/package-ocr",
+        "lmf/sms-service"
+    ]
 }
