@@ -2,17 +2,68 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]  # Run whenever you push to main
-  workflow_dispatch:     # Allow manual trigger
+    branches: [ main ]
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */6 * * *' # Run every 6 hours
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Install Composer dependencies
+        run: composer install --no-dev --optimize-autoloader
+
+      - name: Setup SSH for private repository access
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+          git config --global url."git@github.com:".insteadOf "https://github.com/"
+
+      - name: Check for new releases
+        run: |
+          REPO_SSH="git@github.com:${{ github.repository }}.git"
+          echo "Checking tags in $REPO_SSH"
+          LATEST_TAG=$(git ls-remote --tags $REPO_SSH | tail -1 | cut -f2 | sed 's/refs\/tags\///')
+          echo "Latest tag: $LATEST_TAG"
+
+          if [ -f "last_built_tag.txt" ]; then
+            LAST_BUILT=$(cat last_built_tag.txt)
+            if [ "$LATEST_TAG" = "$LAST_BUILT" ]; then
+              echo "No new releases found. Skipping build."
+              echo "SKIP_BUILD=true" >> $GITHUB_ENV
+            else
+              echo "New release found: $LATEST_TAG"
+              echo "SKIP_BUILD=false" >> $GITHUB_ENV
+            fi
+          else
+            echo "First build, proceeding..."
+            echo "SKIP_BUILD=false" >> $GITHUB_ENV
+          fi
+
+      - name: Build Satis repository
+        if: env.SKIP_BUILD != 'true'
+        run: |
+          php bin/satis build satis.json public/
+          echo "$LATEST_TAG" > last_built_tag.txt
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
