@@ -19,6 +19,9 @@ jobs:
         with:
           php-version: 'latest'
 
+      - name: Configure Composer authentication for GitHub (local)
+        run: composer config --auth github-oauth.github.com "${{ secrets.ACCESS_TOKEN }}"
+
       - name: Install Composer dependencies
         run: composer install --no-dev --prefer-dist --no-progress --no-suggest
 
