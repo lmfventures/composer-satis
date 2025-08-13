@@ -4,6 +4,11 @@
     "repositories": [
         {
             "type": "vcs",
+            "url": "https://github.com/lmfventures/package-ocr.git",
+            "name": "lmf/package-ocr"
+        },
+        {
+            "type": "vcs",
             "url": "https://github.com/lmfventures/package-custom-generator.git",
             "name": "lmf/custom-generator"
         },
@@ -14,6 +19,7 @@
         }
     ],
     "require": {
+        "lmf/package-ocr": "*",
         "lmf/custom-generator": "*",
         "lmf/sms-service": "*"
     },
