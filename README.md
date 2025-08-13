@@ -11,9 +11,9 @@ Inside the composer-satis/satis.json file, follow these rules:
 ### Repositories
 
 - "type": "vcs" for each entry.
-    - Use the correct Git SSH URL:
+    - Use HTTPS as URL:
         ```perl
-        "url": "git@github.com:lmfventures/<repository>.git"
+        "url": "https://github.com/lmfventures/<repository>.git"
         ```
     - Add the Composer package "name" in the format "lmf/package".
 
@@ -29,13 +29,13 @@ Example:
     "repositories": [
         {
             "type": "vcs",
-            "url": "git@github.com:lmfventures/<repository package>.git",
-            "name": "lmf/<repository name>"
+            "url": "https://github.com/lmfventures/<repository-package>.git",
+            "name": "lmf/<repository-name>"
         },
         {
             "type": "vcs",
-            "url": "git@github.com:lmfventures/<repository package2>.git",
-            "name": "lmf/<repository name2>"
+            "url": "https://github.com/lmfventures/<repository-package2>.git",
+            "name": "lmf/<repository-name2>"
         }
     ],
     "require": {
