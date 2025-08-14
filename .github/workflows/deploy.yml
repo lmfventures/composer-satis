@@ -4,6 +4,8 @@ on:
   push:
     branches: [ main ]  # Run whenever you push to main
   workflow_dispatch:     # Allow manual trigger
+  repository_dispatch:   # Allow external repos to trigger rebuilds
+    types: [satis.update]
 
 jobs:
   deploy:
@@ -26,7 +28,14 @@ jobs:
         run: composer install --no-dev --prefer-dist --no-progress --no-suggest
 
       - name: Build Satis
-        run: php bin/satis build satis.json public/
+        env:
+          REPOSITORY_URL: ${{ github.event.client_payload.repository_url }}
+        run: |
+          if [ -n "$REPOSITORY_URL" ]; then
+            php bin/satis build --repository-url "$REPOSITORY_URL" satis.json public/
+          else
+            php bin/satis build satis.json public/
+          fi
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
