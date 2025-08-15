@@ -21,11 +21,6 @@ jobs:
         with:
           php-version: 'latest'
 
-      - name: Configure Git authentication for private repositories
-        run: |
-          git config --global url."https://${{ secrets.ACCESS_TOKEN }}@github.com/".insteadOf "https://github.com/"
-          git config --global url."https://${{ secrets.ACCESS_TOKEN }}@github.com/".insteadOf "git@github.com:"
-
       - name: Configure Composer authentication for GitHub (global)
         run: composer config --global --auth github-oauth.github.com "${{ secrets.ACCESS_TOKEN }}"
 
