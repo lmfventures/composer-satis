@@ -1,0 +1,1021 @@
+{
+    "packages": {
+        "lmf/custom-generator": {
+            "v1.0.0": {
+                "name": "lmf/custom-generator",
+                "version": "v1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-custom-generator.git",
+                    "reference": "7ddcebc3ed1739607151e62e81a9a6b087f8391d"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-custom-generator/zipball/7ddcebc3ed1739607151e62e81a9a6b087f8391d",
+                    "reference": "7ddcebc3ed1739607151e62e81a9a6b087f8391d",
+                    "shasum": ""
+                },
+                "require": {
+                    "laravel/framework": "^10.0|^11.0",
+                    "laravel/prompts": "^0.1.0",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-11T06:08:03+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\CustomGenerator\\CustomGeneratorServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\CustomGenerator\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Ryan Abuyabor",
+                        "email": "ryan@plxrmedia.com"
+                    }
+                ],
+                "description": "Enhanced Artisan commands for generating models, migrations, requests, resources, repositories, and cache classes with advanced features",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-custom-generator/tree/v1.0.0",
+                    "issues": "https://github.com/lmfventures/package-custom-generator/issues"
+                }
+            },
+            "v1.0.1": {
+                "name": "lmf/custom-generator",
+                "version": "v1.0.1",
+                "version_normalized": "1.0.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-custom-generator.git",
+                    "reference": "3204ea8526b72d7d74ca87e68a7d61a3275c8677"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-custom-generator/zipball/3204ea8526b72d7d74ca87e68a7d61a3275c8677",
+                    "reference": "3204ea8526b72d7d74ca87e68a7d61a3275c8677",
+                    "shasum": ""
+                },
+                "require": {
+                    "laravel/framework": "^10.0|^11.0|^12.0",
+                    "laravel/prompts": "^0.1.0",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-11T06:43:43+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\CustomGenerator\\CustomGeneratorServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\CustomGenerator\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Ryan Abuyabor",
+                        "email": "ryan@plxrmedia.com"
+                    }
+                ],
+                "description": "Enhanced Artisan commands for generating models, migrations, requests, resources, repositories, and cache classes with advanced features",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-custom-generator/tree/v1.0.1",
+                    "issues": "https://github.com/lmfventures/package-custom-generator/issues"
+                }
+            },
+            "v1.0.2": {
+                "name": "lmf/custom-generator",
+                "version": "v1.0.2",
+                "version_normalized": "1.0.2.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-custom-generator.git",
+                    "reference": "08b00ca635355a1dc627d5e57d093537e2c7b7ac"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-custom-generator/zipball/08b00ca635355a1dc627d5e57d093537e2c7b7ac",
+                    "reference": "08b00ca635355a1dc627d5e57d093537e2c7b7ac",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/support": "^10.0|^11.0|^12.0",
+                    "laravel/prompts": "^0.1 || ^0.2 || ^0.3",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-11T07:06:30+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\CustomGenerator\\CustomGeneratorServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\CustomGenerator\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Ryan Abuyabor",
+                        "email": "ryan@plxrmedia.com"
+                    }
+                ],
+                "description": "Enhanced Artisan commands for generating models, migrations, requests, resources, repositories, and cache classes with advanced features",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-custom-generator/tree/v1.0.2",
+                    "issues": "https://github.com/lmfventures/package-custom-generator/issues"
+                }
+            },
+            "v1.0.3": {
+                "name": "lmf/custom-generator",
+                "version": "v1.0.3",
+                "version_normalized": "1.0.3.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-custom-generator.git",
+                    "reference": "8c4afce714882b99c7cbc84420b4c1625f005277"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-custom-generator/zipball/8c4afce714882b99c7cbc84420b4c1625f005277",
+                    "reference": "8c4afce714882b99c7cbc84420b4c1625f005277",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/support": "^10.0|^11.0|^12.0",
+                    "laravel/prompts": "^0.1 || ^0.2 || ^0.3",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-14T08:42:21+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\CustomGenerator\\CustomGeneratorServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\CustomGenerator\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Ryan Abuyabor",
+                        "email": "ryan@plxrmedia.com"
+                    }
+                ],
+                "description": "Enhanced Artisan commands for generating models, migrations, requests, resources, repositories, and cache classes with advanced features.",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-custom-generator/tree/v1.0.3",
+                    "issues": "https://github.com/lmfventures/package-custom-generator/issues"
+                }
+            },
+            "v1.0.4": {
+                "name": "lmf/custom-generator",
+                "version": "v1.0.4",
+                "version_normalized": "1.0.4.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-custom-generator.git",
+                    "reference": "e0c3c6a310f113748252f1ad2b334c5d68ec5cf5"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-custom-generator/zipball/e0c3c6a310f113748252f1ad2b334c5d68ec5cf5",
+                    "reference": "e0c3c6a310f113748252f1ad2b334c5d68ec5cf5",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/support": "^10.0|^11.0|^12.0",
+                    "laravel/prompts": "^0.1 || ^0.2 || ^0.3",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-15T07:06:49+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\CustomGenerator\\CustomGeneratorServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\CustomGenerator\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Ryan Abuyabor",
+                        "email": "ryan@plxrmedia.com"
+                    }
+                ],
+                "description": "Enhanced Artisan commands for generating models, migrations, requests, resources, repositories, and cache classes with advanced features.",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-custom-generator/tree/v1.0.4",
+                    "issues": "https://github.com/lmfventures/package-custom-generator/issues"
+                }
+            },
+            "dev-main": {
+                "name": "lmf/custom-generator",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-custom-generator.git",
+                    "reference": "e0c3c6a310f113748252f1ad2b334c5d68ec5cf5"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-custom-generator/zipball/e0c3c6a310f113748252f1ad2b334c5d68ec5cf5",
+                    "reference": "e0c3c6a310f113748252f1ad2b334c5d68ec5cf5",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/support": "^10.0|^11.0|^12.0",
+                    "laravel/prompts": "^0.1 || ^0.2 || ^0.3",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-15T07:06:49+00:00",
+                "default-branch": true,
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\CustomGenerator\\CustomGeneratorServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\CustomGenerator\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Ryan Abuyabor",
+                        "email": "ryan@plxrmedia.com"
+                    }
+                ],
+                "description": "Enhanced Artisan commands for generating models, migrations, requests, resources, repositories, and cache classes with advanced features.",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-custom-generator/tree/v1.0.4",
+                    "issues": "https://github.com/lmfventures/package-custom-generator/issues"
+                }
+            }
+        },
+        "lmf/package-ocr": {
+            "v1.0.0": {
+                "name": "lmf/package-ocr",
+                "version": "v1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-ocr.git",
+                    "reference": "626e6f52477c9a3fe3587252595990086c109be9"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-ocr/zipball/626e6f52477c9a3fe3587252595990086c109be9",
+                    "reference": "626e6f52477c9a3fe3587252595990086c109be9",
+                    "shasum": ""
+                },
+                "require": {
+                    "google/cloud-vision": "^2.0",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-01T03:04:32+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "OcrTools\\OcrServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "OcrTools\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "Laravel package for OCR scanning and parsing using Google Cloud Vision API.",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-ocr/tree/v1.0.0",
+                    "issues": "https://github.com/lmfventures/package-ocr/issues"
+                }
+            },
+            "v1.0.1": {
+                "name": "lmf/package-ocr",
+                "version": "v1.0.1",
+                "version_normalized": "1.0.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-ocr.git",
+                    "reference": "25af83460a777fae5e882f6b70d1c0dcb0728622"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-ocr/zipball/25af83460a777fae5e882f6b70d1c0dcb0728622",
+                    "reference": "25af83460a777fae5e882f6b70d1c0dcb0728622",
+                    "shasum": ""
+                },
+                "require": {
+                    "google/cloud-vision": "^2.0",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-01T05:16:22+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "OcrTools\\OcrServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "OcrTools\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "Laravel package for OCR scanning and parsing using Google Cloud Vision API.",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-ocr/tree/v1.0.1",
+                    "issues": "https://github.com/lmfventures/package-ocr/issues"
+                }
+            },
+            "v1.0.2": {
+                "name": "lmf/package-ocr",
+                "version": "v1.0.2",
+                "version_normalized": "1.0.2.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-ocr.git",
+                    "reference": "dad0c97fed60b3abd290c24ffab49f665f3247a0"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-ocr/zipball/dad0c97fed60b3abd290c24ffab49f665f3247a0",
+                    "reference": "dad0c97fed60b3abd290c24ffab49f665f3247a0",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/support": "^10.0|^11.0|^12.0",
+                    "laravel/prompts": "^0.1 || ^0.2 || ^0.3",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-11T08:51:47+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\PackageOcr\\OcrServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\PackageOcr\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Allen Pagnanawon",
+                        "email": "allen@lmf.ventures"
+                    }
+                ],
+                "description": "Laravel package for OCR scanning and parsing using Google Cloud Vision API.",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-ocr/tree/v1.0.2",
+                    "issues": "https://github.com/lmfventures/package-ocr/issues"
+                }
+            },
+            "v1.0.3": {
+                "name": "lmf/package-ocr",
+                "version": "v1.0.3",
+                "version_normalized": "1.0.3.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-ocr.git",
+                    "reference": "2194c908fdd81fbdb3414e2dbd2780f6a63d8cdd"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-ocr/zipball/2194c908fdd81fbdb3414e2dbd2780f6a63d8cdd",
+                    "reference": "2194c908fdd81fbdb3414e2dbd2780f6a63d8cdd",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/support": "^10.0|^11.0|^12.0",
+                    "laravel/prompts": "^0.1 || ^0.2 || ^0.3",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-12T01:07:41+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\PackageOcr\\OcrServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\PackageOcr\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Allen Pagnanawon",
+                        "email": "allen@lmf.ventures"
+                    }
+                ],
+                "description": "Laravel package for OCR scanning and parsing using Google Cloud Vision API.",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-ocr/tree/v1.0.3",
+                    "issues": "https://github.com/lmfventures/package-ocr/issues"
+                }
+            },
+            "v1.0.4": {
+                "name": "lmf/package-ocr",
+                "version": "v1.0.4",
+                "version_normalized": "1.0.4.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-ocr.git",
+                    "reference": "aab8834c6b57a9a1c7def146127673cad6e8da51"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-ocr/zipball/aab8834c6b57a9a1c7def146127673cad6e8da51",
+                    "reference": "aab8834c6b57a9a1c7def146127673cad6e8da51",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/support": "^10.0|^11.0|^12.0",
+                    "laravel/prompts": "^0.1 || ^0.2 || ^0.3",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-14T08:25:16+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\PackageOcr\\OcrServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\PackageOcr\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Allen Pagnanawon",
+                        "email": "allen@lmf.ventures"
+                    }
+                ],
+                "description": "A package for OCR scanning and parsing using Google Cloud Vision API.",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-ocr/tree/v1.0.4",
+                    "issues": "https://github.com/lmfventures/package-ocr/issues"
+                }
+            },
+            "v1.0.5": {
+                "name": "lmf/package-ocr",
+                "version": "v1.0.5",
+                "version_normalized": "1.0.5.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-ocr.git",
+                    "reference": "8124acca311663b06fa83d9c752c6fbe683878be"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-ocr/zipball/8124acca311663b06fa83d9c752c6fbe683878be",
+                    "reference": "8124acca311663b06fa83d9c752c6fbe683878be",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/support": "^10.0|^11.0|^12.0",
+                    "laravel/prompts": "^0.1 || ^0.2 || ^0.3",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-15T05:56:39+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\PackageOcr\\OcrServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\PackageOcr\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Allen Pagnanawon",
+                        "email": "allen@lmf.ventures"
+                    }
+                ],
+                "description": "A package for OCR scanning and parsing using Google Cloud Vision API.",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-ocr/tree/v1.0.5",
+                    "issues": "https://github.com/lmfventures/package-ocr/issues"
+                }
+            },
+            "v1.0.6": {
+                "name": "lmf/package-ocr",
+                "version": "v1.0.6",
+                "version_normalized": "1.0.6.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-ocr.git",
+                    "reference": "68e3dc367d1e338cc91f639a6fe130241e0f8dda"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-ocr/zipball/68e3dc367d1e338cc91f639a6fe130241e0f8dda",
+                    "reference": "68e3dc367d1e338cc91f639a6fe130241e0f8dda",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/support": "^10.0|^11.0|^12.0",
+                    "laravel/prompts": "^0.1 || ^0.2 || ^0.3",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-15T06:14:08+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\PackageOcr\\OcrServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\PackageOcr\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Allen Pagnanawon",
+                        "email": "allen@lmf.ventures"
+                    }
+                ],
+                "description": "A package for OCR scanning and parsing using Google Cloud Vision API.",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-ocr/tree/v1.0.6",
+                    "issues": "https://github.com/lmfventures/package-ocr/issues"
+                }
+            },
+            "v1.0.7": {
+                "name": "lmf/package-ocr",
+                "version": "v1.0.7",
+                "version_normalized": "1.0.7.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-ocr.git",
+                    "reference": "11de8810575d1a98134ce75d022420b6a340734c"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-ocr/zipball/11de8810575d1a98134ce75d022420b6a340734c",
+                    "reference": "11de8810575d1a98134ce75d022420b6a340734c",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/support": "^10.0|^11.0|^12.0",
+                    "laravel/prompts": "^0.1 || ^0.2 || ^0.3",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-15T06:24:42+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\PackageOcr\\OcrServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\PackageOcr\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Allen Pagnanawon",
+                        "email": "allen@lmf.ventures"
+                    }
+                ],
+                "description": "A package for OCR scanning and parsing using Google Cloud Vision API.",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-ocr/tree/v1.0.7",
+                    "issues": "https://github.com/lmfventures/package-ocr/issues"
+                }
+            },
+            "v1.0.8": {
+                "name": "lmf/package-ocr",
+                "version": "v1.0.8",
+                "version_normalized": "1.0.8.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-ocr.git",
+                    "reference": "98b93c9e92745dd2b35c1544c0fb1ff12bc69ef7"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-ocr/zipball/98b93c9e92745dd2b35c1544c0fb1ff12bc69ef7",
+                    "reference": "98b93c9e92745dd2b35c1544c0fb1ff12bc69ef7",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/support": "^10.0|^11.0|^12.0",
+                    "laravel/prompts": "^0.1 || ^0.2 || ^0.3",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-15T07:17:36+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\PackageOcr\\OcrServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\PackageOcr\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Allen Pagnanawon",
+                        "email": "allen@lmf.ventures"
+                    }
+                ],
+                "description": "A package for OCR scanning and parsing using Google Cloud Vision API.",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-ocr/tree/v1.0.8",
+                    "issues": "https://github.com/lmfventures/package-ocr/issues"
+                }
+            },
+            "v1.0.9": {
+                "name": "lmf/package-ocr",
+                "version": "v1.0.9",
+                "version_normalized": "1.0.9.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-ocr.git",
+                    "reference": "a29b0af0495e7583489c547b9fe1b8849111034e"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-ocr/zipball/a29b0af0495e7583489c547b9fe1b8849111034e",
+                    "reference": "a29b0af0495e7583489c547b9fe1b8849111034e",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/support": "^10.0|^11.0|^12.0",
+                    "laravel/prompts": "^0.1 || ^0.2 || ^0.3",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-15T07:28:37+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\PackageOcr\\OcrServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\PackageOcr\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Allen Pagnanawon",
+                        "email": "allen@lmf.ventures"
+                    }
+                ],
+                "description": "A package for OCR scanning and parsing using Google Cloud Vision API.",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-ocr/tree/v1.0.9",
+                    "issues": "https://github.com/lmfventures/package-ocr/issues"
+                }
+            },
+            "dev-main": {
+                "name": "lmf/package-ocr",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-ocr.git",
+                    "reference": "a29b0af0495e7583489c547b9fe1b8849111034e"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-ocr/zipball/a29b0af0495e7583489c547b9fe1b8849111034e",
+                    "reference": "a29b0af0495e7583489c547b9fe1b8849111034e",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/support": "^10.0|^11.0|^12.0",
+                    "laravel/prompts": "^0.1 || ^0.2 || ^0.3",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-15T07:28:37+00:00",
+                "default-branch": true,
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\PackageOcr\\OcrServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\PackageOcr\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Allen Pagnanawon",
+                        "email": "allen@lmf.ventures"
+                    }
+                ],
+                "description": "A package for OCR scanning and parsing using Google Cloud Vision API.",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-ocr/tree/v1.0.9",
+                    "issues": "https://github.com/lmfventures/package-ocr/issues"
+                }
+            }
+        },
+        "lmf/sms-service": {
+            "v1.0.0": {
+                "name": "lmf/sms-service",
+                "version": "v1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/sms-service.git",
+                    "reference": "e8491438ec9f49693aacb3cccb0c50bc03c1cb21"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/sms-service/zipball/e8491438ec9f49693aacb3cccb0c50bc03c1cb21",
+                    "reference": "e8491438ec9f49693aacb3cccb0c50bc03c1cb21",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/config": "^9.0|^10.0|^11.0|^12.0",
+                    "illuminate/notifications": "^9.0|^10.0|^11.0|^12.0",
+                    "illuminate/support": "^9.0|^10.0|^11.0|^12.0",
+                    "php": "^8.1",
+                    "propaganistas/laravel-phone": "^4.0|^5.0"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0",
+                    "phpunit/phpunit": "^9.0|^10.0|^11.0"
+                },
+                "time": "2025-08-12T06:22:35+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\SmsService\\SmsServiceProvider"
+                        ],
+                        "aliases": {
+                            "Sms": "Lmf\\SmsService\\Facades\\Sms"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\SmsService\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Lmf\\SmsService\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Ed Paul Valencia",
+                        "email": "ed@plxrmedia.com"
+                    }
+                ],
+                "description": "SMS Service Package - A Laravel SMS service supporting multiple drivers with notification channel support",
+                "support": {
+                    "source": "https://github.com/lmfventures/sms-service/tree/v1.0.0",
+                    "issues": "https://github.com/lmfventures/sms-service/issues"
+                }
+            },
+            "v1.0.1": {
+                "name": "lmf/sms-service",
+                "version": "v1.0.1",
+                "version_normalized": "1.0.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/sms-service.git",
+                    "reference": "d5a3f46c226355553e88768dcd022b634d9ce889"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/sms-service/zipball/d5a3f46c226355553e88768dcd022b634d9ce889",
+                    "reference": "d5a3f46c226355553e88768dcd022b634d9ce889",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/config": "^9.0|^10.0|^11.0|^12.0",
+                    "illuminate/notifications": "^9.0|^10.0|^11.0|^12.0",
+                    "illuminate/support": "^9.0|^10.0|^11.0|^12.0",
+                    "php": "^8.1",
+                    "propaganistas/laravel-phone": "^4.0|^5.0"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0",
+                    "phpunit/phpunit": "^9.0|^10.0|^11.0"
+                },
+                "time": "2025-08-12T09:07:38+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\SmsService\\SmsServiceProvider"
+                        ],
+                        "aliases": {
+                            "Sms": "Lmf\\SmsService\\Facades\\Sms"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\SmsService\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Lmf\\SmsService\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Ed Paul Valencia",
+                        "email": "ed@plxrmedia.com"
+                    }
+                ],
+                "description": "SMS Service Package - A Laravel SMS service supporting multiple drivers with notification channel support",
+                "support": {
+                    "source": "https://github.com/lmfventures/sms-service/tree/v1.0.1",
+                    "issues": "https://github.com/lmfventures/sms-service/issues"
+                }
+            },
+            "dev-main": {
+                "name": "lmf/sms-service",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/sms-service.git",
+                    "reference": "d5a3f46c226355553e88768dcd022b634d9ce889"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/sms-service/zipball/d5a3f46c226355553e88768dcd022b634d9ce889",
+                    "reference": "d5a3f46c226355553e88768dcd022b634d9ce889",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/config": "^9.0|^10.0|^11.0|^12.0",
+                    "illuminate/notifications": "^9.0|^10.0|^11.0|^12.0",
+                    "illuminate/support": "^9.0|^10.0|^11.0|^12.0",
+                    "php": "^8.1",
+                    "propaganistas/laravel-phone": "^4.0|^5.0"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^7.0|^8.0|^9.0|^10.0",
+                    "phpunit/phpunit": "^9.0|^10.0|^11.0"
+                },
+                "time": "2025-08-12T09:07:38+00:00",
+                "default-branch": true,
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\SmsService\\SmsServiceProvider"
+                        ],
+                        "aliases": {
+                            "Sms": "Lmf\\SmsService\\Facades\\Sms"
+                        }
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\SmsService\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Lmf\\SmsService\\Tests\\": "tests/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Ed Paul Valencia",
+                        "email": "ed@plxrmedia.com"
+                    }
+                ],
+                "description": "SMS Service Package - A Laravel SMS service supporting multiple drivers with notification channel support",
+                "support": {
+                    "source": "https://github.com/lmfventures/sms-service/tree/v1.0.1",
+                    "issues": "https://github.com/lmfventures/sms-service/issues"
+                }
+            }
+        }
+    }
+}

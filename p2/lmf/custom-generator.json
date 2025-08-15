@@ -1,0 +1,251 @@
+{
+    "packages": {
+        "lmf/custom-generator": [
+            {
+                "name": "lmf/custom-generator",
+                "version": "v1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-custom-generator.git",
+                    "reference": "7ddcebc3ed1739607151e62e81a9a6b087f8391d"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-custom-generator/zipball/7ddcebc3ed1739607151e62e81a9a6b087f8391d",
+                    "reference": "7ddcebc3ed1739607151e62e81a9a6b087f8391d",
+                    "shasum": ""
+                },
+                "require": {
+                    "laravel/framework": "^10.0|^11.0",
+                    "laravel/prompts": "^0.1.0",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-11T06:08:03+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\CustomGenerator\\CustomGeneratorServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\CustomGenerator\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Ryan Abuyabor",
+                        "email": "ryan@plxrmedia.com"
+                    }
+                ],
+                "description": "Enhanced Artisan commands for generating models, migrations, requests, resources, repositories, and cache classes with advanced features",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-custom-generator/tree/v1.0.0",
+                    "issues": "https://github.com/lmfventures/package-custom-generator/issues"
+                }
+            },
+            {
+                "name": "lmf/custom-generator",
+                "version": "v1.0.1",
+                "version_normalized": "1.0.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-custom-generator.git",
+                    "reference": "3204ea8526b72d7d74ca87e68a7d61a3275c8677"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-custom-generator/zipball/3204ea8526b72d7d74ca87e68a7d61a3275c8677",
+                    "reference": "3204ea8526b72d7d74ca87e68a7d61a3275c8677",
+                    "shasum": ""
+                },
+                "require": {
+                    "laravel/framework": "^10.0|^11.0|^12.0",
+                    "laravel/prompts": "^0.1.0",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-11T06:43:43+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\CustomGenerator\\CustomGeneratorServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\CustomGenerator\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Ryan Abuyabor",
+                        "email": "ryan@plxrmedia.com"
+                    }
+                ],
+                "description": "Enhanced Artisan commands for generating models, migrations, requests, resources, repositories, and cache classes with advanced features",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-custom-generator/tree/v1.0.1",
+                    "issues": "https://github.com/lmfventures/package-custom-generator/issues"
+                }
+            },
+            {
+                "name": "lmf/custom-generator",
+                "version": "v1.0.2",
+                "version_normalized": "1.0.2.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-custom-generator.git",
+                    "reference": "08b00ca635355a1dc627d5e57d093537e2c7b7ac"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-custom-generator/zipball/08b00ca635355a1dc627d5e57d093537e2c7b7ac",
+                    "reference": "08b00ca635355a1dc627d5e57d093537e2c7b7ac",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/support": "^10.0|^11.0|^12.0",
+                    "laravel/prompts": "^0.1 || ^0.2 || ^0.3",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-11T07:06:30+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\CustomGenerator\\CustomGeneratorServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\CustomGenerator\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Ryan Abuyabor",
+                        "email": "ryan@plxrmedia.com"
+                    }
+                ],
+                "description": "Enhanced Artisan commands for generating models, migrations, requests, resources, repositories, and cache classes with advanced features",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-custom-generator/tree/v1.0.2",
+                    "issues": "https://github.com/lmfventures/package-custom-generator/issues"
+                }
+            },
+            {
+                "name": "lmf/custom-generator",
+                "version": "v1.0.3",
+                "version_normalized": "1.0.3.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-custom-generator.git",
+                    "reference": "8c4afce714882b99c7cbc84420b4c1625f005277"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-custom-generator/zipball/8c4afce714882b99c7cbc84420b4c1625f005277",
+                    "reference": "8c4afce714882b99c7cbc84420b4c1625f005277",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/support": "^10.0|^11.0|^12.0",
+                    "laravel/prompts": "^0.1 || ^0.2 || ^0.3",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-14T08:42:21+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\CustomGenerator\\CustomGeneratorServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\CustomGenerator\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Ryan Abuyabor",
+                        "email": "ryan@plxrmedia.com"
+                    }
+                ],
+                "description": "Enhanced Artisan commands for generating models, migrations, requests, resources, repositories, and cache classes with advanced features.",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-custom-generator/tree/v1.0.3",
+                    "issues": "https://github.com/lmfventures/package-custom-generator/issues"
+                }
+            },
+            {
+                "name": "lmf/custom-generator",
+                "version": "v1.0.4",
+                "version_normalized": "1.0.4.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-custom-generator.git",
+                    "reference": "e0c3c6a310f113748252f1ad2b334c5d68ec5cf5"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-custom-generator/zipball/e0c3c6a310f113748252f1ad2b334c5d68ec5cf5",
+                    "reference": "e0c3c6a310f113748252f1ad2b334c5d68ec5cf5",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/support": "^10.0|^11.0|^12.0",
+                    "laravel/prompts": "^0.1 || ^0.2 || ^0.3",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-15T07:06:49+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\CustomGenerator\\CustomGeneratorServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\CustomGenerator\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Ryan Abuyabor",
+                        "email": "ryan@plxrmedia.com"
+                    }
+                ],
+                "description": "Enhanced Artisan commands for generating models, migrations, requests, resources, repositories, and cache classes with advanced features.",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-custom-generator/tree/v1.0.4",
+                    "issues": "https://github.com/lmfventures/package-custom-generator/issues"
+                }
+            }
+        ]
+    }
+}
