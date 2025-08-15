@@ -137,7 +137,7 @@ Use Semantic Versioning.
 ```bash
     git add .
     git commit -m "feat: initial release"
-    git tag v0.1.0
+    git tag v1.0.0
     git remote add origin git@github.com:your-org-or-username/your-package-name.git
     git push -u origin main --tags
 ```
@@ -149,7 +149,7 @@ Use Semantic Versioning.
 Users can now install your package:
 
 ```bash
-  composer require lmf/your-package-name:^0.1
+  composer require lmf/your-package-name:^1.0
 ```
 
 #### 9) Optional: Laravel package specifics
@@ -213,3 +213,62 @@ Copy and adapt:
 You now have a working template to build, test, version, and publish a Composer package.
 
 [See LMF package OCR for reference](https://github.com/lmfventures/package-ocr)
+
+---
+
+### Automated Satis Build Trigger on Release
+
+This workflow automatically notifies your Satis repository whenever a new release is published or a version tag is pushed.
+Once triggered, Satis will automatically rebuild, ensuring your Composer repository is always up to date.
+
+#### Setup Instructions
+
+1. Run the following commands in your project root to create the workflow file:
+    ```bash
+    mkdir -p .github/workflows && touch .github/workflows/notify-satis.yml
+    ```
+2. Paste the following workflow code into .github/workflows/notify-satis.yml:
+
+    ```yaml
+    name: Notify Satis
+
+    on:
+    release:
+        types: [published]
+    push:
+        tags:
+        - 'v*'
+
+    jobs:
+    dispatch:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Send repository_dispatch to Satis
+            uses: peter-evans/repository-dispatch@v3
+            with:
+            token: ${{ secrets.SATIS_DISPATCH_TOKEN }}
+            repository: lmfventures/composer-satis
+            event-type: satis.update
+            client-payload: >
+                {
+                "repository_url":"${{ github.server_url }}/${{ github.repository }}.git",
+                "tag":"${{ github.event.release.tag_name || github.ref_name }}",
+                "ref":"${{ github.ref }}",
+                "release_url":"${{ github.event.release.html_url || '' }}",
+                "release_name":"${{ github.event.release.name || '' }}",
+                "commit_sha":"${{ github.sha }}"
+                }
+    ```
+
+3. Create the GitHub Secret
+    - Go to your repository in GitHub.
+
+    - Navigate to Settings → Secrets and variables → Actions → New repository secret.
+
+    - Name it exactly:
+        ```text
+        SATIS_DISPATCH_TOKEN
+        ```
+    - Paste the Personal Access Token (PAT) into the value field.
+
+    - Click Add secret.
