@@ -1,5 +1,5 @@
 name: Deploy to GitHub Pages
-#1
+
 on:
   push:
     branches: [ main ]  # Run whenever you push to main
@@ -14,18 +14,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 1
 
       - name: Install PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: 'latest'
+          php-version: '8.3'
 
       - name: Configure Composer authentication for GitHub (global)
         run: composer config --global --auth github-oauth.github.com "${{ secrets.ACCESS_TOKEN }}"
 
       - name: Install Composer dependencies
-        run: composer install --no-dev --prefer-dist --no-progress --no-suggest
+        run: composer install --no-dev --prefer-dist --no-progress
 
       - name: Build Satis
         env:
@@ -43,5 +43,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           force_orphan: true
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
