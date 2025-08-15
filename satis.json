@@ -24,7 +24,7 @@
         "lmf/sms-service": "*"
     },
     "require-all": false,
-    "require-dependencies": true,
+    "require-dependencies": false,
     "require-dev-dependencies": false,
     "config": {
         "secure-http": true
