@@ -30,7 +30,7 @@ This creates a minimal `composer.json` and PSR-4 autoload mapping for `Lmf\YourP
 #### 2) Scaffold directories
 
 ```bash
-  mkdir -p src tests
+mkdir -p src tests
 ```
 
 Optionally add: `docs/`, `examples/`, `config/`, `.github/workflows/`.
@@ -55,7 +55,7 @@ class Greeting
 #### 4) Install dev tools and tests
 
 ```bash
-  composer require --dev phpunit/phpunit:^11 friendsofphp/php-cs-fixer:^3
+composer require --dev phpunit/phpunit:^11 friendsofphp/php-cs-fixer:^3
 ```
 
 Add scripts to `composer.json` to streamline workflows:
@@ -89,20 +89,25 @@ Create a first test:
 <?php
 // file: tests/GreetingTest.php
 
+use PHPUnit\Framework\TestCase;
 use Lmf\YourPackage\Greeting;
 
-it('greets by name', function () {
-    $greeting = new Greeting();
-    expect($greeting->sayHello('World'))->toBe('Hello, World!');
-});
+class GreetingTest extends TestCase
+{
+    public function testGreetsByName(): void
+    {
+        $greeting = new Greeting();
+        $this->assertSame('Hello, World!', $greeting->sayHello('World'));
+    }
+}
 ```
 
-If you prefer classic PHPUnit instead of Pest, use a `\PHPUnit\Framework\TestCase` class.
+This example uses PHPUnit's `\PHPUnit\Framework\TestCase`.
 
 Run tests:
 
 ```bash
-  composer test
+composer test
 ```
 
 #### 5) Composer autoload verification
@@ -110,7 +115,7 @@ Run tests:
 After adding classes, dump autoload to update the class map:
 
 ```bash
-  composer dump-autoload
+composer dump-autoload
 ```
 
 #### 6) Documentation and metadata
@@ -135,21 +140,21 @@ Example `.gitattributes`:
 Use Semantic Versioning.
 
 ```bash
-    git add .
-    git commit -m "feat: initial release"
-    git tag v1.0.0
-    git remote add origin git@github.com:your-org-or-username/your-package-name.git
-    git push -u origin main --tags
+git add .
+git commit -m "feat: initial release"
+git tag v1.0.0
+git remote add origin git@github.com:your-org-or-username/your-package-name.git
+git push -u origin main --tags
 ```
 
-#### 8) Publish to Github
+#### 8) Publish to GitHub
 
 - Ensure GitHub hooks are active so Satis auto-updates on new tags
 
 Users can now install your package:
 
 ```bash
-  composer require lmf/your-package-name:^1.0
+composer require lmf/your-package-name:^1.0
 ```
 
 #### 9) Optional: Laravel package specifics
@@ -233,42 +238,56 @@ Once triggered, Satis will automatically rebuild, ensuring your Composer reposit
     name: Notify Satis
 
     on:
-    release:
-        types: [published]
-    push:
-        tags:
-        - 'v*'
+        release:
+            types: [published]
+        push:
+            tags:
+                - "v*"
 
     jobs:
-    dispatch:
-        runs-on: ubuntu-latest
-        steps:
-        - name: Send repository_dispatch to Satis
-            uses: peter-evans/repository-dispatch@v3
-            with:
-            token: ${{ secrets.SATIS_DISPATCH_TOKEN }}
-            repository: lmfventures/composer-satis
-            event-type: satis.update
-            client-payload: >
-                {
-                "repository_url":"${{ github.server_url }}/${{ github.repository }}.git",
-                "tag":"${{ github.event.release.tag_name || github.ref_name }}",
-                "ref":"${{ github.ref }}",
-                "release_url":"${{ github.event.release.html_url || '' }}",
-                "release_name":"${{ github.event.release.name || '' }}",
-                "commit_sha":"${{ github.sha }}"
-                }
+        dispatch:
+            runs-on: ubuntu-latest
+            steps:
+                - name: Send repository_dispatch to Satis
+                  uses: peter-evans/repository-dispatch@v3
+                  with:
+                      token: ${{ secrets.SATIS_DISPATCH_TOKEN }}
+                      repository: lmfventures/composer-satis
+                      event-type: satis.update
+                      client-payload: |
+                          {
+                            "repository_url": "${{ github.server_url }}/${{ github.repository }}.git",
+                            "tag": "${{ github.event.release.tag_name || github.ref_name }}",
+                            "ref": "${{ github.ref }}",
+                            "release_url": "${{ github.event.release.html_url || '' }}",
+                            "release_name": "${{ github.event.release.name || '' }}",
+                            "commit_sha": "${{ github.sha }}"
+                          }
     ```
 
 3. Create the GitHub Secret
-    - Go to your repository in GitHub.
 
-    - Navigate to Settings → Secrets and variables → Actions → New repository secret.
+#### Option A – Add the secret to this repository
 
-    - Name it exactly:
-        ```text
-        SATIS_DISPATCH_TOKEN
-        ```
-    - Paste the Personal Access Token (PAT) into the value field.
+- Go to your repository in GitHub.
 
-    - Click Add secret.
+- Navigate to Settings → Secrets and variables → Actions → New repository secret.
+
+- Name it exactly:
+    ```text
+    SATIS_DISPATCH_TOKEN
+    ```
+- Paste the Personal Access Token (PAT) into the value field.
+
+- Click Add secret.
+
+##### Option B – Use an organization-level secret
+
+- If the repository belongs to an organization, you can set SATIS_DISPATCH_TOKEN at the organization level.
+
+- Organization-level secrets are available to all private repositories under that organization.
+
+#### Note on required PAT scopes
+
+- Contents: Read & Write access
+- Metadata: Read-only access
