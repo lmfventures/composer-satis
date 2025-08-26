@@ -16,12 +16,18 @@
             "type": "vcs",
             "url": "https://github.com/lmfventures/sms-service.git",
             "name": "lmf/sms-service"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/lmfventures/beetzee-pay-service.git",
+            "name": "lmf/beetzee-pay"
         }
     ],
     "require": {
         "lmf/package-ocr": "*",
         "lmf/custom-generator": "*",
-        "lmf/sms-service": "*"
+        "lmf/sms-service": "*",
+        "lmf/beetzee-pay": "*"
     },
     "require-all": false,
     "require-dependencies": false,
