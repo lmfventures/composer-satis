@@ -21,13 +21,19 @@
             "type": "vcs",
             "url": "https://github.com/lmfventures/beetzee-pay-service.git",
             "name": "lmf/beetzee-pay"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/lmfventures/asbir-pay-service.git",
+            "name": "lmf/asbir-pay"
         }
     ],
     "require": {
         "lmf/package-ocr": "*",
         "lmf/custom-generator": "*",
         "lmf/sms-service": "*",
-        "lmf/beetzee-pay": "*"
+        "lmf/beetzee-pay": "*",
+        "lmf/asbir-pay": "*"
     },
     "require-all": false,
     "require-dependencies": false,
