@@ -1,10 +1,9 @@
 name: Deploy to GitHub Pages
-
 on:
   push:
-    branches: [ main ]  # Run whenever you push to main
-  workflow_dispatch:     # Allow manual trigger
-  repository_dispatch:   # Allow external repos to trigger rebuilds
+    branches: [ main ]
+  workflow_dispatch:
+  repository_dispatch:
     types: [satis.update]
 
 jobs:
@@ -15,28 +14,53 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
-
+      
       - name: Install PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.3'
-
+      
       - name: Configure Composer authentication for GitHub (global)
         run: composer config --global --auth github-oauth.github.com "${{ secrets.ACCESS_TOKEN }}"
-
+      
       - name: Install Composer dependencies
         run: composer install --no-dev --prefer-dist --no-progress
-
-      - name: Build Satis
+      
+      - name: Check if new package
+        id: check_package
         env:
           REPOSITORY_URL: ${{ github.event.client_payload.repository_url }}
         run: |
           if [ -n "$REPOSITORY_URL" ]; then
+            # Check if package exists in satis.json
+            if grep -q "$REPOSITORY_URL" satis.json; then
+              echo "is_new_package=false" >> $GITHUB_OUTPUT
+              echo "✅ Existing package - will update only"
+            else
+              echo "is_new_package=true" >> $GITHUB_OUTPUT
+              echo "🆕 New package - will do full rebuild"
+            fi
+          else
+            echo "is_new_package=false" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Build Satis (conditional)
+        env:
+          REPOSITORY_URL: ${{ github.event.client_payload.repository_url }}
+          TAG: ${{ github.event.client_payload.tag }}
+          IS_NEW: ${{ steps.check_package.outputs.is_new_package }}
+        run: |
+          if [ "$IS_NEW" = "true" ]; then
+            echo "🔄 NEW PACKAGE - Full rebuild of all packages"
+            php bin/satis build satis.json public/
+          elif [ -n "$REPOSITORY_URL" ]; then
+            echo "⚡ EXISTING PACKAGE - Quick update for: $REPOSITORY_URL (tag: $TAG)"
             php bin/satis build --repository-url "$REPOSITORY_URL" satis.json public/
           else
+            echo "🔄 Manual trigger - Full rebuild"
             php bin/satis build satis.json public/
           fi
-
+      
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
