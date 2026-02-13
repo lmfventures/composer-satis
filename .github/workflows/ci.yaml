@@ -31,7 +31,12 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ${{ steps.composer-cache.outputs.directory }}
-          key: php-${{ matrix.php-version }}-${{ matrix.stability }}-composer-${{ hashFiles('**/composer.lock') }}
-          restore-keys: ${{ matrix.php }}-${{ matrix.stability }}-composer
-      - run: composer update --${{ matrix.stability }} --prefer-dist --no-interaction
+          key: >
+            php-${{ matrix.php-version }}-${{ matrix.stability }}-
+            composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: >
+            ${{ matrix.php }}-${{ matrix.stability }}-composer
+      - run: >
+          composer update --${{ matrix.stability }} \
+          --prefer-dist --no-interaction
       - run: composer run test

@@ -14,18 +14,16 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
-      
       - name: Install PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.3'
-      
       - name: Configure Composer authentication for GitHub (global)
-        run: composer config --global --auth github-oauth.github.com "${{ secrets.ACCESS_TOKEN }}"
-      
+        run: >
+          composer config --global --auth github-oauth.github.com
+          "${{ secrets.ACCESS_TOKEN }}"
       - name: Install Composer dependencies
         run: composer install --no-dev --prefer-dist --no-progress
-      
       - name: Check if new package
         id: check_package
         env:
@@ -43,7 +41,7 @@ jobs:
           else
             echo "is_new_package=false" >> $GITHUB_OUTPUT
           fi
-      
+
       - name: Build Satis (conditional)
         env:
           REPOSITORY_URL: ${{ github.event.client_payload.repository_url }}
@@ -54,13 +52,14 @@ jobs:
             echo "🔄 NEW PACKAGE - Full rebuild of all packages"
             php bin/satis build satis.json public/
           elif [ -n "$REPOSITORY_URL" ]; then
-            echo "⚡ EXISTING PACKAGE - Quick update for: $REPOSITORY_URL (tag: $TAG)"
-            php bin/satis build --repository-url "$REPOSITORY_URL" satis.json public/
+            echo "⚡ EXISTING PACKAGE - Quick update for:"
+            echo "  $REPOSITORY_URL (tag: $TAG)"
+            php bin/satis build --repository-url \
+              "$REPOSITORY_URL" satis.json public/
           else
             echo "🔄 Manual trigger - Full rebuild"
             php bin/satis build satis.json public/
           fi
-      
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
