@@ -2,34 +2,42 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]  # Run whenever you push to main
-  workflow_dispatch:     # Allow manual trigger
-  repository_dispatch:   # Allow external repos to trigger rebuilds
+    branches: [ main ]           # Trigger on main branch pushes
+  workflow_dispatch:              # Allow manual trigger
+  repository_dispatch:            # Allow external triggers
     types: [satis.update]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      # 1. Checkout the repository
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
 
+      # 2. Set up PHP
       - name: Install PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.3'
 
-      - name: Configure Composer authentication for GitHub (global)
-        run: composer config --global --auth github-oauth.github.com "${{ secrets.ACCESS_TOKEN }}"
+      # 3. Configure Composer authentication for GitHub using SATIS_DISPATCH_TOKEN
+      - name: Configure Composer authentication
+        run: composer config --global --auth github-oauth.github.com "${{ secrets.SATIS_DISPATCH_TOKEN }}"
 
+      # 4. Install Composer dependencies (private packages will work)
       - name: Install Composer dependencies
+        env:
+          COMPOSER_AUTH: '{"github-oauth": {"github.com": "${{ secrets.SATIS_DISPATCH_TOKEN }}"}}'
         run: composer install --no-dev --prefer-dist --no-progress
 
+      # 5. Build Satis
       - name: Build Satis
         env:
           REPOSITORY_URL: ${{ github.event.client_payload.repository_url }}
+          COMPOSER_AUTH: '{"github-oauth": {"github.com": "${{ secrets.SATIS_DISPATCH_TOKEN }}"}}'
         run: |
           if [ -n "$REPOSITORY_URL" ]; then
             php bin/satis build --repository-url "$REPOSITORY_URL" satis.json public/
@@ -37,6 +45,7 @@ jobs:
             php bin/satis build satis.json public/
           fi
 
+      # 6. Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
