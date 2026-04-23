@@ -33,11 +33,23 @@ jobs:
         run: npm run build
       - name: Install Composer dependencies
         run: composer install --no-dev --prefer-dist --no-progress
-      - name: Check if new package
+      - name: Check if new package or satis.json changed
         id: check_package
         env:
           REPOSITORY_URL: ${{ github.event.client_payload.repository_url }}
         run: |
+          # Check if satis.json changed in this push
+          if git diff --name-only HEAD~1 HEAD 2>/dev/null | grep -q "satis.json"; then
+            echo "satis_changed=true" >> $GITHUB_OUTPUT
+            echo "📝 satis.json changed - will do full rebuild"
+          elif ! git rev-parse --verify HEAD~1 >/dev/null 2>&1; then
+            # First commit - assume satis.json changed
+            echo "satis_changed=true" >> $GITHUB_OUTPUT
+            echo "📝 First commit - will do full rebuild"
+          else
+            echo "satis_changed=false" >> $GITHUB_OUTPUT
+          fi
+          
           if [ -n "$REPOSITORY_URL" ]; then
             # Check if package exists in satis.json
             if grep -q "$REPOSITORY_URL" satis.json; then
@@ -56,8 +68,12 @@ jobs:
           REPOSITORY_URL: ${{ github.event.client_payload.repository_url }}
           TAG: ${{ github.event.client_payload.tag }}
           IS_NEW: ${{ steps.check_package.outputs.is_new_package }}
+          SATIS_CHANGED: ${{ steps.check_package.outputs.satis_changed }}
         run: |
-          if [ "$IS_NEW" = "true" ]; then
+          if [ "$SATIS_CHANGED" = "true" ]; then
+            echo "🔄 SATIS.JSON CHANGED - Full rebuild of all packages"
+            php bin/satis build satis.json public/
+          elif [ "$IS_NEW" = "true" ]; then
             echo "🔄 NEW PACKAGE - Full rebuild of all packages"
             php bin/satis build satis.json public/
           elif [ -n "$REPOSITORY_URL" ]; then
