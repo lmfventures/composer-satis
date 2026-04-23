@@ -26,6 +26,11 @@
             "type": "vcs",
             "url": "https://github.com/lmfventures/asbir-pay-service.git",
             "name": "lmf/asbir-pay"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/lmfventures/api-responser.git",
+            "name": "lmf/api-responser"
         }
     ],
     "require": {
@@ -33,7 +38,8 @@
         "lmf/custom-generator": "*",
         "lmf/sms-service": "*",
         "lmf/beetzee-pay": "*",
-        "lmf/asbir-pay": "*"
+        "lmf/asbir-pay": "*",
+        "lmf/api-responser": "*"
     },
     "require-all": false,
     "require-dependencies": false,
