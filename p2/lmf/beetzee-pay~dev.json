@@ -1,0 +1,113 @@
+{
+    "packages": {
+        "lmf/beetzee-pay": [
+            {
+                "name": "lmf/beetzee-pay",
+                "version": "dev-develop",
+                "version_normalized": "dev-develop",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/beetzee-pay-service.git",
+                    "reference": "bb1f1e4c4673b22a3303145ea1e97b4618d9bf42"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/beetzee-pay-service/zipball/bb1f1e4c4673b22a3303145ea1e97b4618d9bf42",
+                    "reference": "bb1f1e4c4673b22a3303145ea1e97b4618d9bf42",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/config": "^10.0|^11.0|^12.0|^13.0",
+                    "illuminate/hashing": "^10.0|^11.0|^12.0|^13.0",
+                    "illuminate/http": "^10.0|^11.0|^12.0|^13.0",
+                    "illuminate/routing": "^10.0|^11.0|^12.0|^13.0",
+                    "illuminate/support": "^10.0|^11.0|^12.0|^13.0",
+                    "nesbot/carbon": "^2.0|^3.0",
+                    "php": "^8.1|^8.2|^8.3"
+                },
+                "time": "2026-06-10T09:08:46+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\BeetzeePay\\Providers\\BeetzeePayServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\BeetzeePay\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Ed Paul Valencia",
+                        "email": "ed@plxrmedia.com"
+                    }
+                ],
+                "description": "BeetzeePay service integration for Laravel apps.",
+                "support": {
+                    "source": "https://github.com/lmfventures/beetzee-pay-service/tree/develop",
+                    "issues": "https://github.com/lmfventures/beetzee-pay-service/issues"
+                }
+            },
+            {
+                "name": "lmf/beetzee-pay",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/beetzee-pay-service.git",
+                    "reference": "d15f07685441fef930d248e232837283def149f9"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/beetzee-pay-service/zipball/d15f07685441fef930d248e232837283def149f9",
+                    "reference": "d15f07685441fef930d248e232837283def149f9",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/config": "^10.0|^11.0|^12.0|^13.0",
+                    "illuminate/hashing": "^10.0|^11.0|^12.0|^13.0",
+                    "illuminate/http": "^10.0|^11.0|^12.0|^13.0",
+                    "illuminate/routing": "^10.0|^11.0|^12.0|^13.0",
+                    "illuminate/support": "^10.0|^11.0|^12.0|^13.0",
+                    "nesbot/carbon": "^2.0|^3.0",
+                    "php": "^8.1|^8.2|^8.3"
+                },
+                "time": "2026-06-10T09:09:24+00:00",
+                "default-branch": true,
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\BeetzeePay\\Providers\\BeetzeePayServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\BeetzeePay\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Ed Paul Valencia",
+                        "email": "ed@plxrmedia.com"
+                    }
+                ],
+                "description": "BeetzeePay service integration for Laravel apps.",
+                "support": {
+                    "source": "https://github.com/lmfventures/beetzee-pay-service/tree/v0.4.0",
+                    "issues": "https://github.com/lmfventures/beetzee-pay-service/issues"
+                }
+            }
+        ]
+    }
+}

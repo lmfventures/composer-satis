@@ -1,0 +1,56 @@
+{
+    "packages": {
+        "lmf/package-ocr": [
+            {
+                "name": "lmf/package-ocr",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/package-ocr.git",
+                    "reference": "a29b0af0495e7583489c547b9fe1b8849111034e"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/package-ocr/zipball/a29b0af0495e7583489c547b9fe1b8849111034e",
+                    "reference": "a29b0af0495e7583489c547b9fe1b8849111034e",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/support": "^10.0|^11.0|^12.0",
+                    "laravel/prompts": "^0.1 || ^0.2 || ^0.3",
+                    "php": "^8.1"
+                },
+                "time": "2025-08-15T07:28:37+00:00",
+                "default-branch": true,
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\PackageOcr\\OcrServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\PackageOcr\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Allen Pagnanawon",
+                        "email": "allen@lmf.ventures"
+                    }
+                ],
+                "description": "A package for OCR scanning and parsing using Google Cloud Vision API.",
+                "support": {
+                    "source": "https://github.com/lmfventures/package-ocr/tree/v1.0.9",
+                    "issues": "https://github.com/lmfventures/package-ocr/issues"
+                }
+            }
+        ]
+    }
+}

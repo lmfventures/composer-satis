@@ -1,0 +1,17 @@
+{
+    "packages": [],
+    "includes": {
+        "include/all$54b2846dbf4e18e46dc6fc871572d2ce5c0ee362.json": {
+            "sha1": "54b2846dbf4e18e46dc6fc871572d2ce5c0ee362"
+        }
+    },
+    "metadata-url": "/composer-satis/p2/%package%.json",
+    "available-packages": [
+        "lmf/api-responser",
+        "lmf/asbir-pay",
+        "lmf/beetzee-pay",
+        "lmf/custom-generator",
+        "lmf/package-ocr",
+        "lmf/sms-service"
+    ]
+}

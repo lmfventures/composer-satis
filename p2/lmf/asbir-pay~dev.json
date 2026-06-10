@@ -1,0 +1,205 @@
+{
+    "packages": {
+        "lmf/asbir-pay": [
+            {
+                "name": "lmf/asbir-pay",
+                "version": "dev-develop",
+                "version_normalized": "dev-develop",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/asbir-pay-service.git",
+                    "reference": "e4cd2244afa54fd1d79216bcf8010bbf9af8d6e2"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/asbir-pay-service/zipball/e4cd2244afa54fd1d79216bcf8010bbf9af8d6e2",
+                    "reference": "e4cd2244afa54fd1d79216bcf8010bbf9af8d6e2",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/config": "^10.0|^11.0|^12.0|^13.0",
+                    "illuminate/hashing": "^10.0|^11.0|^12.0|^13.0",
+                    "illuminate/http": "^10.0|^11.0|^12.0|^13.0",
+                    "illuminate/routing": "^10.0|^11.0|^12.0|^13.0",
+                    "illuminate/support": "^10.0|^11.0|^12.0|^13.0",
+                    "nesbot/carbon": "^2.0|^3.0",
+                    "php": "^8.2|^8.3"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^8.0|^9.0|^10.0",
+                    "phpunit/phpunit": "^10.0|^11.0"
+                },
+                "time": "2026-06-10T09:20:13+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\AsbirPay\\Providers\\AsbirPayServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\AsbirPay\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Lmf\\AsbirPay\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "test": [
+                        "vendor/bin/phpunit"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Ed Paul Valencia",
+                        "email": "ed@plxrmedia.com"
+                    }
+                ],
+                "description": "AsbirPay service integration for Laravel apps.",
+                "support": {
+                    "source": "https://github.com/lmfventures/asbir-pay-service/tree/develop"
+                }
+            },
+            {
+                "name": "lmf/asbir-pay",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/asbir-pay-service.git",
+                    "reference": "75eba9b837a784b4acde48e46ba6b36bd3562497"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/asbir-pay-service/zipball/75eba9b837a784b4acde48e46ba6b36bd3562497",
+                    "reference": "75eba9b837a784b4acde48e46ba6b36bd3562497",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/config": "^10.0|^11.0|^12.0|^13.0",
+                    "illuminate/hashing": "^10.0|^11.0|^12.0|^13.0",
+                    "illuminate/http": "^10.0|^11.0|^12.0|^13.0",
+                    "illuminate/routing": "^10.0|^11.0|^12.0|^13.0",
+                    "illuminate/support": "^10.0|^11.0|^12.0|^13.0",
+                    "nesbot/carbon": "^2.0|^3.0",
+                    "php": "^8.2|^8.3"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^8.0|^9.0|^10.0",
+                    "phpunit/phpunit": "^10.0|^11.0"
+                },
+                "time": "2026-06-10T09:21:13+00:00",
+                "default-branch": true,
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\AsbirPay\\Providers\\AsbirPayServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\AsbirPay\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Lmf\\AsbirPay\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "test": [
+                        "vendor/bin/phpunit"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Ed Paul Valencia",
+                        "email": "ed@plxrmedia.com"
+                    }
+                ],
+                "description": "AsbirPay service integration for Laravel apps.",
+                "support": {
+                    "source": "https://github.com/lmfventures/asbir-pay-service/tree/v0.3.0"
+                }
+            },
+            {
+                "name": "lmf/asbir-pay",
+                "version": "dev-ryan",
+                "version_normalized": "dev-ryan",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/asbir-pay-service.git",
+                    "reference": "e212421d99aaa302ed1576dc4221504b822ccd3e"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/asbir-pay-service/zipball/e212421d99aaa302ed1576dc4221504b822ccd3e",
+                    "reference": "e212421d99aaa302ed1576dc4221504b822ccd3e",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/config": "^10.0|^11.0|^12.0",
+                    "illuminate/hashing": "^10.0|^11.0|^12.0",
+                    "illuminate/http": "^10.0|^11.0|^12.0",
+                    "illuminate/routing": "^10.0|^11.0|^12.0",
+                    "illuminate/support": "^10.0|^11.0|^12.0",
+                    "nesbot/carbon": "^2.0|^3.0",
+                    "php": "^8.1|^8.2"
+                },
+                "require-dev": {
+                    "orchestra/testbench": "^8.0|^9.0",
+                    "phpunit/phpunit": "^10.0|^11.0"
+                },
+                "time": "2026-03-30T07:01:11+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\AsbirPay\\Providers\\AsbirPayServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\AsbirPay\\": "src/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Lmf\\AsbirPay\\Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "test": [
+                        "vendor/bin/phpunit"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Ed Paul Valencia",
+                        "email": "ed@plxrmedia.com"
+                    }
+                ],
+                "description": "AsbirPay service integration for Laravel apps.",
+                "support": {
+                    "source": "https://github.com/lmfventures/asbir-pay-service/tree/ryan"
+                }
+            }
+        ]
+    }
+}

@@ -1,0 +1,180 @@
+{
+    "packages": {
+        "lmf/api-responser": [
+            {
+                "name": "lmf/api-responser",
+                "version": "v0.1.0",
+                "version_normalized": "0.1.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/api-responser.git",
+                    "reference": "bca3e7dfc061bea7de41957b492d9cc09b393279"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/api-responser/zipball/bca3e7dfc061bea7de41957b492d9cc09b393279",
+                    "reference": "bca3e7dfc061bea7de41957b492d9cc09b393279",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/config": "^10.0|^11.0|^12.0",
+                    "illuminate/database": "^10.0|^11.0|^12.0",
+                    "illuminate/http": "^10.0|^11.0|^12.0",
+                    "illuminate/pagination": "^10.0|^11.0|^12.0",
+                    "illuminate/routing": "^10.0|^11.0|^12.0",
+                    "illuminate/support": "^10.0|^11.0|^12.0",
+                    "nesbot/carbon": "^2.0|^3.0",
+                    "php": "^8.1|^8.2"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.28"
+                },
+                "time": "2026-03-11T13:01:54+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\ApiResponser\\Providers\\ApiResponserServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\ApiResponser\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Ed Paul Valencia",
+                        "email": "ed@plxrmedia.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Standard API response structure for Internal Projects",
+                "support": {
+                    "source": "https://github.com/lmfventures/api-responser/tree/v0.1.1",
+                    "issues": "https://github.com/lmfventures/api-responser/issues"
+                }
+            },
+            {
+                "name": "lmf/api-responser",
+                "version": "v0.1.1",
+                "version_normalized": "0.1.1.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/api-responser.git",
+                    "reference": "bca3e7dfc061bea7de41957b492d9cc09b393279"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/api-responser/zipball/bca3e7dfc061bea7de41957b492d9cc09b393279",
+                    "reference": "bca3e7dfc061bea7de41957b492d9cc09b393279",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/config": "^10.0|^11.0|^12.0",
+                    "illuminate/database": "^10.0|^11.0|^12.0",
+                    "illuminate/http": "^10.0|^11.0|^12.0",
+                    "illuminate/pagination": "^10.0|^11.0|^12.0",
+                    "illuminate/routing": "^10.0|^11.0|^12.0",
+                    "illuminate/support": "^10.0|^11.0|^12.0",
+                    "nesbot/carbon": "^2.0|^3.0",
+                    "php": "^8.1|^8.2"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.28"
+                },
+                "time": "2026-03-11T13:01:54+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\ApiResponser\\Providers\\ApiResponserServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\ApiResponser\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Ed Paul Valencia",
+                        "email": "ed@plxrmedia.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Standard API response structure for Internal Projects",
+                "support": {
+                    "source": "https://github.com/lmfventures/api-responser/tree/v0.1.1",
+                    "issues": "https://github.com/lmfventures/api-responser/issues"
+                }
+            },
+            {
+                "name": "lmf/api-responser",
+                "version": "v0.2.0",
+                "version_normalized": "0.2.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "git@github.com:lmfventures/api-responser.git",
+                    "reference": "f7576a5299f5edbd437ab01c67b233d617a43eb3"
+                },
+                "dist": {
+                    "type": "zip",
+                    "url": "https://api.github.com/repos/lmfventures/api-responser/zipball/f7576a5299f5edbd437ab01c67b233d617a43eb3",
+                    "reference": "f7576a5299f5edbd437ab01c67b233d617a43eb3",
+                    "shasum": ""
+                },
+                "require": {
+                    "illuminate/config": "^10.0|^11.0|^12.0|^13.0",
+                    "illuminate/database": "^10.0|^11.0|^12.0|^13.0",
+                    "illuminate/http": "^10.0|^11.0|^12.0|^13.0",
+                    "illuminate/pagination": "^10.0|^11.0|^12.0|^13.0",
+                    "illuminate/routing": "^10.0|^11.0|^12.0|^13.0",
+                    "illuminate/support": "^10.0|^11.0|^12.0|^13.0",
+                    "nesbot/carbon": "^2.0|^3.0",
+                    "php": "^8.1|^8.2|^8.3"
+                },
+                "require-dev": {
+                    "laravel/pint": "^1.28"
+                },
+                "time": "2026-05-26T02:32:27+00:00",
+                "type": "library",
+                "extra": {
+                    "laravel": {
+                        "providers": [
+                            "Lmf\\ApiResponser\\Providers\\ApiResponserServiceProvider"
+                        ]
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "Lmf\\ApiResponser\\": "src/"
+                    }
+                },
+                "license": [
+                    "MIT"
+                ],
+                "authors": [
+                    {
+                        "name": "Ed Paul Valencia",
+                        "email": "ed@plxrmedia.com",
+                        "role": "Developer"
+                    }
+                ],
+                "description": "Standard API response structure for Internal Projects",
+                "support": {
+                    "source": "https://github.com/lmfventures/api-responser/tree/v0.2.0",
+                    "issues": "https://github.com/lmfventures/api-responser/issues"
+                }
+            }
+        ]
+    }
+}
